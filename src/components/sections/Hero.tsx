@@ -1,0 +1,42 @@
+// src/components/sections/Hero.tsx
+export function Hero() {
+  return (
+    <section
+      id="hero"
+      className="min-h-[90vh] flex items-center justify-center px-6 py-24"
+    >
+      <div className="max-w-3xl mx-auto text-center">
+        <div className="inline-flex items-center gap-2 bg-slate-800/60 border border-slate-700 rounded-full px-4 py-1.5 text-slate-400 text-sm mb-8">
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          Available for fractional CAIO engagements
+        </div>
+        <h1 className="text-6xl md:text-7xl font-bold text-slate-100 mb-4 tracking-tight">
+          Gray Hodge
+        </h1>
+        <p className="text-lg text-indigo-400 font-medium mb-6 tracking-wide uppercase">
+          Fractional Chief AI Officer
+        </p>
+        <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto">
+          I build AI systems that help small businesses compete —
+          and teach them how.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://galvanizedesigns.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-3.5 rounded-lg font-semibold transition-colors text-base"
+          >
+            Work With Me →
+          </a>
+          <a
+            href="#writing"
+            className="border border-slate-600 hover:border-slate-400 text-slate-300 hover:text-slate-100 px-8 py-3.5 rounded-lg font-semibold transition-colors text-base"
+          >
+            Read My Writing
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
