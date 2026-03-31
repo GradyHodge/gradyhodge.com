@@ -1,0 +1,72 @@
+---
+title: How We Built a Federal Contract Intelligence Platform in One Day
+description: A real case study of building GovOpps AI Recon — an AI-powered SAM.gov opportunity discovery platform — from zero to live beta in a single session.
+date: '2026-03-28'
+pillar: Build Stories
+---
+
+Federal contracting is a $700 billion market. Most small businesses never touch it — not because they're unqualified, but because finding and evaluating the right opportunities is a full-time job.
+
+We built a platform to change that. Here's exactly how we did it, what broke, and how we fixed it.
+
+## The Problem
+
+SAM.gov lists every federal contracting opportunity. It's publicly accessible. But it's also overwhelming: thousands of contracts updated daily, each requiring hours of analysis to determine fit.
+
+Small contractors — the ones who could actually win these contracts — don't have hours. They have one person doing three jobs.
+
+The question: could we use AI to do the analysis automatically and surface only the opportunities worth pursuing?
+
+## What We Built
+
+**GovOpps AI Recon** — a multi-tenant SaaS platform that:
+
+1. Connects to SAM.gov's public API and pulls opportunities matching your NAICS codes
+2. Scores each opportunity using Claude AI against your company profile (certifications, past performance, value range)
+3. Tags opportunities automatically (geography, competition level, contract type)
+4. Tracks your pipeline from discovery through proposal
+
+## The Tech Stack
+
+- **Next.js 15** with App Router and Edge Runtime (Cloudflare Pages compatibility)
+- **Supabase** for multi-tenant auth, database, and row-level security
+- **Claude AI** (Anthropic) for opportunity scoring — both Sonnet for precision and Haiku for batch operations
+- **SAM.gov API** for live opportunity data
+- **Cloudflare Pages** for deployment
+
+## What Broke (And What We Fixed)
+
+### Problem 1: Edge Runtime vs. Node.js APIs
+
+Cloudflare Pages runs on Edge Runtime — a stripped-down JavaScript environment that doesn't support Node.js APIs like `fs`, `path`, or certain `crypto` methods.
+
+Our first deploy crashed with three separate Edge Runtime errors in server action files.
+
+**Fix:** We audited every server action for Node.js-specific patterns and replaced them:
+- Stripped `revalidatePath` (not supported in Edge)
+- Replaced inline server action closures with `.bind()` pattern
+- Changed dynamic `import()` inside closures to static imports at file top
+
+### Problem 2: Multi-Tenant Security
+
+With multiple companies using the same platform, the risk of data leakage between tenants is real. We used Supabase Row-Level Security (RLS) policies to enforce tenant isolation at the database layer — every query is automatically scoped to the requesting organization.
+
+### Problem 3: AI Scoring Costs
+
+Claude Sonnet is powerful but expensive at scale. For initial scoring of large batches, we built a two-tier system: Haiku for automatic background scoring (fast, cheap, good enough for initial ranking) and Sonnet for deep analysis when a user explicitly requests it.
+
+## The Result
+
+Live beta with real users on day one. Zach Hodge, CEO of Hodge Group Investments & Contracting LLC, signed up during the session and immediately added his NAICS codes and ran a SAM.gov refresh.
+
+It worked.
+
+## What This Demonstrates
+
+You don't need a 6-month runway to ship production software in 2026. You need a clear problem, the right stack, and a disciplined build process.
+
+AI handles the complexity that used to require a team. One developer with the right tools can ship what used to take three.
+
+---
+
+*Gray Hodge is a Fractional Chief AI Officer and full-stack engineer. He builds AI-powered platforms for small businesses and government contractors. [Work with Gray →](https://galvanizedesigns.com)*
