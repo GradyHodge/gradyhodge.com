@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { getArticle, getArticles } from '@/lib/articles'
+import { ArticleSchema } from '@/components/ArticleSchema'
 
 export function generateStaticParams() {
   return getArticles().map(a => ({ slug: a.slug }))
@@ -32,7 +33,14 @@ export default async function ArticlePage({
   if (!article || article.slug.startsWith('_')) notFound()
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-16">
+    <>
+      <ArticleSchema
+        headline={article.title}
+        description={article.description}
+        datePublished={article.date}
+        url={`https://gradyhodge.com/writing/${article.slug}`}
+      />
+      <div className="max-w-3xl mx-auto px-6 py-16">
       <div className="mb-8">
         <span className="text-xs font-bold tracking-widest text-indigo-400 uppercase">
           {article.pillar}
@@ -70,5 +78,6 @@ export default async function ArticlePage({
         </p>
       </div>
     </div>
+    </>
   )
 }
