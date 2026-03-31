@@ -2,6 +2,8 @@
 import type { MetadataRoute } from 'next'
 import { getArticles } from '@/lib/articles'
 
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getArticles().filter(a => !a.slug.startsWith('_'))
 
