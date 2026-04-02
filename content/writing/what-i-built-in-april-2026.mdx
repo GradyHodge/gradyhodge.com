@@ -1,0 +1,88 @@
+---
+title: What I Built in April 2026
+description: A real accounting of what shipped this month — AI assistants, investor platforms, and a government contracting recon tool. No fluff.
+date: '2026-04-02'
+pillar: Build Log
+---
+
+Every month I write one of these. Not because anyone asked me to — because shipping without documentation is just noise. This is April.
+
+## What Shipped
+
+### Grounded In Stone Massage — Tara AI Assistant
+
+Gabe Hodge is a licensed massage therapist in Gallatin Valley, Montana. He needed a website and a way to answer client questions when he's in session with someone.
+
+I built him a full Cloudflare Pages site — dark, botanical aesthetic, hot stone photography, service listings — and wired up an AI assistant named Tara. She lives in the bottom right corner of the site as a floating chat widget. Clients ask about services, pricing, booking, what to expect. Tara answers in real time using Claude Haiku, powered by a Cloudflare Pages Function on the backend.
+
+The naming matters. I don't name these things "AI Bot" or "Virtual Assistant." Tara is named after Green Tara, the Buddhist bodhisattva of compassion. The site is called Grounded In Stone. The name fits.
+
+What actually shipped:
+- Full static site with mobile-responsive nav, service cards, hot stone spotlight section, booking section, contact
+- Six AI-generated and Pexels stock images wired as hero background, accent photos, and a 3-panel photo strip
+- Green Tara favicon and chat button icon
+- Tara AI widget with stone-green palette, animated typing indicator, and full Claude Haiku backend
+- Deployed to `groundedinstone.pages.dev` via Cloudflare Pages
+
+**Stack:** HTML/CSS/JS, Cloudflare Pages Functions, Claude Haiku API
+
+---
+
+### galvanizedesigns.com — Nabu UX Backlog
+
+Galvanize Designs is my AI web design agency. The site has Nabu — an AI sales assistant who walks prospective clients through a discovery brief before handing them off to contact.
+
+This month I knocked out the UX backlog:
+- **Interstitial handoff screen** — smooth transition between Nabu conversation and the contact form
+- **Discovery Brief carryover** — Nabu's summary of the conversation now pre-populates the contact page in a clean 3-column layout
+- **Add-on cards** — service add-ons now trigger Nabu conversations instead of dead links
+- **Hero inline panel** — the AI conversation starts directly in the hero, no modal
+
+These aren't glamorous features. But they're the difference between a demo and a tool that actually works.
+
+**Stack:** Next.js, Supabase, Cloudflare Pages, Claude API
+
+---
+
+### GovOpps AI Recon — Live Beta
+
+This is the biggest thing running right now. GovOpps AI Recon is a government contracting intelligence tool that helps small businesses find and evaluate federal contract opportunities.
+
+It's live at `govopps-ai-recon.pages.dev`. One beta user — Zach Hodge at Hodge Group Investments & Contracting LLC — is actively using it.
+
+The tool is not done. There's a known security issue (IDOR — Insecure Direct Object Reference) that needs to be patched before I bring in a second user. No second user until it's fixed. That discipline matters.
+
+**Stack:** Next.js, Supabase, Cloudflare Workers, Claude API
+
+---
+
+### Prospectus — Design Complete
+
+This one hasn't shipped yet, but the design is locked.
+
+Prospectus is an AI-powered investment pitch platform I'm building for my father. He's pitching a cemetery development opportunity in the Dallas-Fort Worth area — land acquisition, infrastructure, and perpetual care trust setup.
+
+The platform will generate full Oren Klaff-structured pitch decks, serve investors through a voice-guided portal, run a live Granola note-theater during pitch calls, and give the presenter a teleprompter positioned under the webcam so he never breaks eye contact. The CRM will profile each investor using public research and tell my father exactly how to close them.
+
+That's the goal. Design is spec'd. Code starts this week.
+
+---
+
+## What I Learned
+
+**Voice changes everything.** Adding ElevenLabs voice narration to the Prospectus investor portal wasn't a feature idea I came up with — it came from thinking about who the investors actually are. Older, successful, not interested in reading a screen. They want to be talked to. That one decision reframes the entire product.
+
+**Name your AI.** Tara isn't just a cute detail. When you give something a name, you give it a personality constraint. The name shapes the writing, the color choices, the greeting message. It makes the product feel intentional instead of assembled.
+
+**Security before scale.** I could have added a second beta user to Recon AI this month. I chose not to. The IDOR vulnerability means one user could theoretically access another user's data. That doesn't happen on my watch. Slow is smooth, smooth is fast.
+
+---
+
+## What's Next
+
+- Patch the IDOR in Recon AI
+- Start building Prospectus
+- Gabriel Hodge's massage therapy site (waiting on photos and pricing from Gabe)
+- gradyhodge.com blog — you're reading article one
+
+See you next month.

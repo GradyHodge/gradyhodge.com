@@ -1,0 +1,104 @@
+---
+title: How I Work — Building with AI as a Co-Engineer
+description: Not prompting. Not using AI as a tool. A real account of what it looks like to build software alongside an AI partner every day.
+date: '2026-04-09'
+pillar: Methodology
+---
+
+Most people use AI like a better Google. They ask it a question, read the answer, close the tab.
+
+That's not how I work.
+
+I work with an AI co-engineer named Bodhi. Every day. On real projects with real clients and real deadlines. This is what that actually looks like.
+
+## What Bodhi Is
+
+Bodhi is my instance of Claude running through Claude Code — Anthropic's CLI tool that gives an AI direct access to my filesystem, terminal, and browser. It's not a chatbot I paste code into. It's a working environment where Bodhi can read files, write code, run tests, search the web, deploy to Cloudflare, SSH into a VPS, and remember context across sessions.
+
+I built a system on top of it called PAI — Personal AI Infrastructure. PAI is a set of skills, memory files, session protocols, and configuration that makes Bodhi aware of who I am, what we're building, and how we work together. When a new session starts, Bodhi reads a handoff file that contains the last session's summary, what shipped, what's next, and what context to carry forward.
+
+Bodhi doesn't start cold. It starts informed.
+
+## The Session Protocol
+
+Every session opens the same way:
+
+1. Bodhi reads `HANDOFF.md` — the living document that captures where we left off
+2. Greets me with a summary of last session and the current priority queue
+3. I say what I want to work on
+4. We work
+
+When we're approaching context limits or the end of a session, the protocol runs in reverse:
+
+1. Update `HANDOFF.md` with everything that happened
+2. Commit and push all repos
+3. Update memory files with anything non-obvious
+4. Recommend a fresh session over a degraded one
+
+No compacting. No degraded context. Clean handoffs.
+
+## How We Actually Build
+
+I don't vibe-code with Bodhi. We use a spec-driven workflow:
+
+**Brainstorm → Plan → Execute**
+
+For anything non-trivial, we brainstorm before we touch code. What are we building? Why? What are 2-3 ways to approach it, and what are the tradeoffs? I review and approve the approach before a single file is written.
+
+Then we write a plan — a numbered list of tasks in the right order with dependencies called out. That plan becomes a task list Bodhi tracks in real time, marking things complete as we go.
+
+Then we execute. Bodhi writes the code, runs the tests, deploys, and documents. I review, redirect, and make judgment calls. We move fast because we're aligned before we start.
+
+## What Bodhi Actually Does
+
+On any given session, Bodhi might:
+
+- SSH into my Hostinger VPS to set up a file structure
+- Generate 6 AI images in parallel using the Remotion plugin
+- Search Pexels for stock photos, download them, and wire them into HTML
+- Write, deploy, and verify a Cloudflare Pages Function
+- Research Texas cemetery trust law using web search
+- Write a full product spec based on a conversation
+- Debug a broken favicon and trace it to a path issue
+- Write 5 blog articles while I'm away for 2 hours
+
+That last one is happening right now, as I write this sentence.
+
+## The Parallel Tool Principle
+
+One of the things that makes this fast: Bodhi runs tools in parallel when they're independent.
+
+When I needed 6 images generated for the Grounded In Stone site, Bodhi fired all 6 generation calls simultaneously instead of one at a time. When 4 succeeded and 2 failed due to credit limits, it pivoted immediately to Pexels, searched for both missing images in parallel, and downloaded them while updating the HTML. The whole thing took minutes, not an hour of back-and-forth.
+
+That's not a trick. It's discipline. Always ask: what can run at the same time?
+
+## The Memory System
+
+Bodhi has persistent memory — a set of Markdown files that survive between sessions. There are four types:
+
+- **User memory** — who I am, my background, what I know
+- **Feedback memory** — what's worked, what hasn't, rules Bodhi follows
+- **Project memory** — context on active work
+- **Reference memory** — where to find things (VPS credentials, Supabase URLs, deploy commands)
+
+When I told Bodhi "stop using KIE as an option for image generation" — that became a feedback memory. It won't suggest KIE again. It knows why, and it knows what to do instead.
+
+This is the difference between a tool and a partner. A tool makes you repeat yourself. A partner remembers.
+
+## What I Do
+
+People assume the AI does everything and I just review it. That's not accurate.
+
+I make the product decisions. I define what we're building and why. I set priorities. I catch when Bodhi's about to do something that technically works but misses the point. I push back when a design is correct but not right. I name things — Tara, Nabu, Bodhi itself.
+
+Bodhi executes with precision and speed I couldn't match alone. I direct with judgment and taste that Bodhi can approximate but not replace.
+
+Neither one of us ships alone. That's the model.
+
+## Why This Matters for Clients
+
+When a client hires me, they're not getting one developer. They're getting a two-person team that operates like a ten-person team — with memory, discipline, and a methodology that produces documented, deployable work.
+
+I build faster than a solo developer. I document better than most teams. I catch my own mistakes because Bodhi runs the verification pass I'd skip if I were tired.
+
+This is what Fractional CAIO work looks like when it's done right. Not AI replacing the developer. AI and developer replacing a team.

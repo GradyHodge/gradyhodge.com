@@ -1,0 +1,83 @@
+---
+title: "Grounded In Stone: Building a Massage Therapist's AI Assistant"
+description: A full case study — how I built an AI-powered website for a massage therapist in Montana, named the AI after a Buddhist bodhisattva, and deployed it in one session.
+date: '2026-04-23'
+pillar: Case Study
+---
+
+Gabe Hodge is a licensed massage therapist in Gallatin Valley, Montana. He graduated from Montana State University and Sacred Roots School of Massage in Bozeman. He does deep tissue, Swedish, hot stone, sports massage, craniosacral, trigger point, lymphatic drainage, and cupping.
+
+He needed a website that could answer client questions when he's in session with someone and can't pick up the phone.
+
+This is how that became Tara.
+
+## The Brief
+
+The requirements were straightforward:
+
+- A professional site that matches Gabe's aesthetic — grounded, natural, Montana
+- Service listings with descriptions and pricing placeholders
+- A booking section (Square Appointments embed, coming when Gabe sets up his account)
+- An AI assistant for client questions
+
+The unstated requirement — the one that actually shapes everything — was that it needed to feel like *Gabe*. Not like a corporate wellness brand. Not like a spa chain. Like a skilled practitioner who takes his work seriously and brings a calm, unhurried presence to it.
+
+That last requirement is why naming the AI mattered.
+
+## The Name
+
+I don't deploy nameless AI assistants. A name isn't cosmetic — it's a design constraint that shapes every other decision.
+
+The site is called Grounded In Stone. The signature service is Swedish massage with hot basalt stones. The aesthetic I had in mind was botanical, dark, earthy — the kind of place that feels like a forest after rain.
+
+I named the AI Tara. Green Tara is a bodhisattva in Tibetan Buddhism — the embodiment of compassion, protector of travelers, reliever of suffering. She is, specifically, the bodhisattva of healing and swift action. Her color is green.
+
+The site's color palette is deep forest green. The chat button is a circular image of a Green Tara statue. The greeting message is: *"Hey, I'm Tara — I can help you figure out which service is right for you, answer questions about what Gabe does, or point you toward booking. What's going on with your body?"*
+
+That last line — *what's going on with your body?* — is not how AI assistants usually talk. It's how a skilled practitioner opens a conversation. That's Tara.
+
+## The Build
+
+**The site itself** is static HTML/CSS — no framework, no build pipeline, no JavaScript library. Pure Cloudflare Pages.
+
+The design uses a `--forest` color system: deep greens, warm stone gold, cream text. Every color has a name because named colors in CSS make the work readable. The nav is fixed, the layout is a single scrolling page, the service cards hover with a gold border. Mobile breakpoints at 768px.
+
+**The images** were the interesting problem. I needed six images — a hero background, two botanical/statue accents, two hot stone massage shots, and a plants accent. I fired six AI generation jobs in parallel using the Remotion plugin. Four succeeded. Two hit a credit limit.
+
+I pivoted immediately to Pexels. Searched for both missing images simultaneously, found a Kaboompics hot stone massage shot (id: 6629534 — therapist hands on stone, candlelight, excellent composition) and a Thiha Myokyaw monstera leaf shot (id: 18207316 — deep dark green, square, exactly the moody botanical accent the site needed). Downloaded both, wired them in.
+
+The hero background is AI-generated banana leaves — enormous, lush, emerald green — with a dark gradient overlay from left to right so the text stays readable. The Green Tara bodhisattva statue shot fills the about section where Gabe's photo will eventually go.
+
+**Tara's backend** is a Cloudflare Pages Function at `functions/tara.js`. It receives a POST request with the conversation history, calls Claude Haiku with a system prompt that knows everything about Gabe's services and approach, and returns the reply. The system prompt is `TARA_SYSTEM_PROMPT` — named for Tara, not a generic variable.
+
+**The widget itself** — `tara.js` — is a self-contained IIFE. It injects its own styles, builds its DOM, and manages its own state. No dependencies. Loads from a `<script defer>` tag at the bottom of the page. The button is a circular Green Tara image. The panel opens with an opacity + translate animation. The typing indicator is three green dots.
+
+## What Shipped
+
+- Full static site, mobile responsive
+- 6 images: hero background, Buddha statue, Green Tara statue, two hot stone shots, plants accent
+- Green Tara favicon (64px, resized from the downloaded image)
+- Green Tara nav logo (replaces the 🪨 emoji)
+- Tara AI widget with full Claude Haiku backend
+- Deployed to `groundedinstone.pages.dev` via Cloudflare Pages
+
+One session, start to finish.
+
+## What's Still Needed
+
+Gabe needs to send me real photos of himself and his space. He needs to set up a Square account and get the appointment embed code. He needs to confirm his pricing so I can fill in the `$__` placeholders.
+
+These aren't technical problems. They're Gabe problems. The site is ready for them when he is.
+
+## What I'd Do Differently
+
+Nothing about the technical choices. But I'd push harder earlier on getting the actual content — the pricing, the photos, the real address. Placeholder content delays the moment a site becomes real for the client. Real content makes it real.
+
+The site exists and works. Tara is live. When a client in Bozeman asks "what's the difference between Swedish and deep tissue at 11pm on a Wednesday," she gets a thoughtful answer.
+
+That's the job.
+
+---
+
+*Grounded In Stone Massage — [groundedinstone.pages.dev](https://groundedinstone.pages.dev)*
+*Gabe Hodge, Licensed Massage Therapist — (406) 600-1783*
