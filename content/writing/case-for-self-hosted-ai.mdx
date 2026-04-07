@@ -1,0 +1,50 @@
+---
+title: The Case for Self-Hosted AI — Why I Run My Own Agents
+description: Cloud AI tools are convenient. Self-hosted AI agents are sovereign. For personal data, sensitive client work, and persistent memory — ownership matters.
+date: '2026-04-22'
+pillar: AI Engineering
+---
+
+Most people use AI tools they don't own, running on servers they've never seen, processing data they've agreed to in terms of service nobody reads.
+
+That's fine for many use cases. It's the wrong choice for personal AI infrastructure.
+
+Here's why I run my own agents — and what it gives me that SaaS AI can't.
+
+## The Sovereignty Problem
+
+When your AI system runs entirely in the cloud, every piece of context you provide — your values, your goals, your projects, your personal history — sits on someone else's infrastructure, subject to their data retention policies, their security posture, and their business decisions.
+
+For generic tasks, this is an acceptable tradeoff. For the personal AI infrastructure I've built — a system that contains my life OS, my career history, my active projects, and my decision frameworks — it's not.
+
+My TELOS document, my session memory, my project context — these don't belong on a server I don't control. The data that makes my AI uniquely useful to me is the data I'm most motivated to protect.
+
+## What I Run
+
+On a $5/month Hostinger VPS:
+
+**n8n** — self-hosted workflow automation. Visual pipeline builder for journal digitization, content processing, and cross-service automation. The equivalent of Zapier or Make, running on hardware I control at zero recurring cost per workflow.
+
+**Open Brain** — a personal knowledge base with PostgreSQL, pgvector for semantic search, and a Deno REST API. Session insights, technical decisions, project context — all searchable by meaning, not just keyword. Fully self-hosted. The data lives on my server.
+
+**OpenClaw** — lightweight AI agent gateway. Routes AI requests to open-source models via OpenRouter. Accessible from anywhere, running any model, without a managed service dependency.
+
+The total infrastructure cost: ~$10/month. The operational independence: complete.
+
+## The Tradeoffs
+
+Self-hosting isn't free. It requires setup time, maintenance awareness, and the willingness to debug a systemd service when something breaks at 11pm.
+
+For personal infrastructure, I accept those tradeoffs. For production client services, I layer self-hosted components with managed cloud services — self-hosted for the data I own, cloud for the compute intensity.
+
+The key decision framework: what data needs sovereignty? Build self-hosted around that. What needs scale? Use managed services. Don't mix up the two categories.
+
+## What It Makes Possible
+
+The self-hosted stack enables something that cloud-only AI can't provide: a persistent, growing, private knowledge layer that makes your AI smarter over time about the specific context of your life and work.
+
+My AI knows decisions I made months ago and why. It knows which projects I've deprioritized and what triggered that choice. It knows the technical lessons I learned building specific features.
+
+That context doesn't exist in any cloud AI tool. It exists because I built the infrastructure to capture and retain it.
+
+That's the return on the investment. A personal AI that knows more about your work with every session — because it owns the memory.

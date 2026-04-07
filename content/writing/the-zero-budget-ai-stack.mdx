@@ -1,0 +1,48 @@
+---
+title: The Zero-Budget AI Stack That Powers Three Live Products
+description: I built and shipped three AI-powered products in 2026 with zero infrastructure spend. Here's the stack, the reasoning, and what it proves about building AI at any scale.
+date: '2026-04-18'
+pillar: AI Engineering
+---
+
+In 2026, I shipped three live AI-powered products. They're in production. They have real users. And my monthly infrastructure bill is approximately zero.
+
+This isn't a stunt. It's a deliberate philosophy — and it has implications for how organizations at any scale should think about building with AI.
+
+## The Stack
+
+**Cloudflare Pages + Workers** — edge hosting for all three products. Global CDN, instant deploys via Wrangler CLI, edge runtime with no cold starts. The free tier covers everything at current scale. When revenue demands more, costs scale proportionally.
+
+**Supabase** — Postgres database with row-level security, real-time subscriptions, and built-in auth. Free tier handles development and early production. RLS means the database enforces ownership — users see only their organization's data.
+
+**Anthropic Claude API** — Claude Sonnet for deep analysis, Claude Haiku for batch operations and lightweight chatbots. The API is consumption-based. No fixed cost, no idle servers.
+
+**Next.js** — Full-stack React framework with server components, API routes, and static generation in one. Runs on Cloudflare Workers at the edge.
+
+**Bun** — JavaScript runtime and package manager. Meaningfully faster than npm for install times and builds.
+
+That's it. The entire production stack runs on free tiers and usage-based APIs. No VMs to maintain. No databases to provision. No infrastructure team required.
+
+## The Three Products
+
+**Recon AI** — Government contract intelligence platform. Pulls live federal opportunities from SAM.gov, scores them with Claude against user-defined criteria, generates AI-assisted proposals. Built on Cloudflare Workers + Supabase. Live at govopps-ai-recon.pages.dev.
+
+**Prospectus** — AI-powered investor pitch platform for a private equity firm. Voice narration via ElevenLabs, AI-driven Q&A, investment calculator, and pitch generation. Built on Next.js + Bun + VPS Postgres.
+
+**Grounded In Stone** — AI-powered customer assistant for a massage therapy business. Claude Haiku chatbot with a branded persona, deployed as a Cloudflare Pages Function. Zero server cost.
+
+## What This Proves
+
+The barrier to AI-powered products isn't infrastructure — it's architecture decisions. The organizations spending enormous sums on AI infrastructure are frequently solving problems that the free tier handles perfectly at early and mid-stage scale.
+
+The philosophy: start with zero fixed costs. Scale costs with revenue. Only pay for what you use.
+
+This isn't the right architecture for every use case. Large data volumes, compliance requirements, and enterprise SLAs change the calculus. But for product validation, early-stage SaaS, and client deployments? This stack is production-ready from day one.
+
+## The Implication for AI Engineers
+
+If you're thinking about building something with AI, the conversation about infrastructure should happen at month six, not month one. Start with what's free and excellent. Build the product. Validate the market.
+
+The tools exist. The stack is mature. The cost of shipping your first AI product is now essentially zero.
+
+The only thing that's expensive is waiting.

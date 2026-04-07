@@ -1,0 +1,50 @@
+---
+title: What 10 Years of Enterprise CMS Taught Me About Building AI Systems
+description: The lessons from managing 5,000 web pages at enterprise scale translate directly into the principles that govern well-architected AI systems.
+date: '2026-05-17'
+pillar: AI Engineering
+---
+
+I spent ten years in Adobe Experience Manager. At U.S. Bank, I coordinated 65 developers across 5,000 pages and 20 product teams. I built DAM governance systems, content fragment libraries, multi-site management processes, and accessibility compliance programs.
+
+At the time, I thought this was my CMS career. Now I understand: it was my AI architecture training.
+
+The principles that make enterprise content systems work at scale are the same principles that make AI systems reliable, maintainable, and trustworthy.
+
+## Lesson 1: Governance Before Scale
+
+The most common failure mode I saw in CMS deployments: organizations moved fast, skipped governance, and ended up with a DAM full of duplicate assets, inconsistent naming conventions, and siloed content that couldn't be found or reused.
+
+The fix was always the same: establish governance before you scale. Naming conventions, folder structures, ownership models, intake standards — set them up when the team is small. They're cheap to implement early and nearly impossible to retrofit later.
+
+The AI equivalent: data governance, prompt standards, output quality standards — define them before you scale the system. The RAG architecture that works for 10 documents behaves differently with 10,000. The prompt that produces good results with three users produces unpredictable results with three hundred.
+
+Govern first. Scale second.
+
+## Lesson 2: Content Fragments Are APIs
+
+One of the best architectural decisions in AEM is the content fragment: structured content stored separately from presentation, reusable across channels, maintained in one place and consumed in many.
+
+The principle: separate content from presentation. Don't couple the data to the display.
+
+In AI systems: separate the knowledge layer from the interaction layer. Don't embed facts in prompts — put them in a retrieval system. Don't hard-code context — make it composable. The AI system that can update its knowledge without redeploying the application is architecturally healthier than one that can't.
+
+Same principle, different domain.
+
+## Lesson 3: Multi-Site Management Is Multi-Tenant Architecture
+
+Managing content across 12 regional sites at AAA Insurance required a system that could share components, respect regional variation, and maintain governance across the entire estate simultaneously.
+
+That's multi-tenant architecture. Different tenants, shared infrastructure, isolated contexts, centralized governance.
+
+Every multi-user AI product is a multi-tenant architecture problem. Shared model, isolated context, per-tenant data isolation. The failure modes are identical: tenant data leaking, shared context contaminating individual sessions, governance at the estate level conflicting with flexibility at the tenant level.
+
+The enterprise CMS instinct — build isolation in, don't retrofit it — is the right instinct for AI systems too.
+
+## The Transfer
+
+If you have enterprise system experience — CMS, ERP, CRM, any system that has to manage complexity at scale across multiple stakeholders — you have more AI engineering intuition than you think.
+
+The domain vocabulary is different. The underlying architectural principles are not.
+
+Bring your scale experience. Apply it deliberately. The AI systems that survive contact with real organizations are built by people who've already learned those lessons somewhere else.

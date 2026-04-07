@@ -1,0 +1,42 @@
+---
+title: How I Built a Government Contract Intelligence Platform with AI
+description: From zero to production: the architecture, decisions, and AI implementation behind Recon AI — a federal contract scoring and proposal platform built on the Anthropic stack.
+date: '2026-04-19'
+pillar: AI Engineering
+---
+
+Government contracting is a $700 billion market. Most small businesses and veteran-owned firms miss 90% of the relevant opportunities — not because they lack capability, but because finding, evaluating, and responding to federal contracts is operationally brutal.
+
+I built Recon AI to solve that problem with AI.
+
+## The Problem
+
+Federal contract opportunities on SAM.gov are numerous, complex, and poorly differentiated. A small government contractor needs to answer three questions quickly: Is this relevant to what we do? Can we win it? Is it worth the effort to bid?
+
+Without AI, answering those questions requires reading every opportunity in full. With 20,000+ active opportunities at any given time, that's not a human-scale task.
+
+## The Architecture
+
+**Data Layer:** The SAM.gov API provides live federal contract data. I built a pipeline that pulls active opportunities by NAICS code and keyword, normalizes the data through Zod schema validation, and stores it in Supabase with row-level security — each organization sees only their pipeline.
+
+**Scoring Engine:** Claude Sonnet performs deep analysis of each contract against user-defined criteria: past performance history, technical capability alignment, competitive landscape, and win probability. I use Haiku for batch scoring of large opportunity sets where speed matters more than depth.
+
+**Proposal Generation:** The system generates AI-assisted proposal drafts that incorporate the contract's specific requirements, evaluation criteria, and the organization's documented capabilities. Not a finished proposal — a structured starting point that cuts drafting time significantly.
+
+**Security Architecture:** This was the hardest part. Government contract data is sensitive. Multi-user access required IDOR (Insecure Direct Object Reference) protection — the system needed to guarantee that no user could access another organization's data. Row-level security in Supabase handles this at the database layer, enforced regardless of application-level code.
+
+## What I Learned Building It
+
+The AI scoring engine required more prompt engineering than I expected. The first iteration produced scores that were technically accurate but not operationally useful — they told you how well a contract matched your capabilities, but not how a decision-maker should actually weight it.
+
+The fix was adding domain context: what makes a contract winnable, what red flags indicate an existing contractor is entrenched, how to evaluate the competitive landscape from public award data. Once that context was embedded, the scores became decision tools rather than information displays.
+
+## The Outcome
+
+Recon AI is live at govopps-ai-recon.pages.dev. It's in beta with its first user. The next phase is IDOR security hardening before the second user onboards.
+
+The platform demonstrates a repeatable pattern: take a domain with high complexity and high data volume, add an AI scoring layer, and reduce the time from "opportunity exists" to "actionable decision" from hours to minutes.
+
+That pattern applies across industries. Healthcare RFPs. Commercial real estate deals. Legal contract review. Insurance underwriting. The domain changes. The architecture doesn't.
+
+Build the scoring layer. Ship the decision tool. That's AI engineering that creates real value.
