@@ -1,0 +1,110 @@
+---
+title: 'Teaching My AI to Remember (Or: How I Solved Digital Goldfish Brain)'
+description: 'The /wrap protocol, SessionStart hooks, and HANDOFF.md — building a memory bridge between conversations so Bodhi stops introducing himself every 5 minutes.'
+date: '2026-04-07'
+series: PAI Tentacles
+tentacle: 2
+emoji: 🎣
+published: true
+---
+
+> **R.P.M. for this project:**
+> - **R (Results):** Bodhi retains context across sessions. Every conversation continues where the last one ended.
+> - **P (Purpose):** I was explaining the same context every. single. session. I have better things to do than repeat myself to my own AI.
+> - **M (M.A.P.):** Build a session close ritual (/wrap). Build a session open protocol (SessionStart). Bridge them with a document (HANDOFF.md). Make it automatic.
+
+---
+
+Here's the problem with large language models nobody tells you up front:
+
+**They have goldfish brains.**
+
+Every session starts fresh. Zero memory. You could have spent 12 hours building something incredible with your AI yesterday, and today it'll ask you what your name is.
+
+*(Actually it won't ask. It'll just assume you're a random human with no history. Which is somehow worse.)*
+
+The first time this happened to me with Bodhi, I typed "Good morning" and got back a completely blank-slate response. No context. No continuity. No memory of the 47 things we'd built together the day before.
+
+I felt like I was in a really depressing version of Groundhog Day. Except I was the only one who remembered. And the other person was an AI.
+
+---
+
+## The Solution: Three Moving Parts
+
+### 1. HANDOFF.md — The Session Bridge
+
+`HANDOFF.md` is a file that lives in my PAI directory. It gets updated at the end of every session with:
+
+- What we did
+- Key technical notes for every active project
+- Exact next steps (specific enough that a fresh Bodhi can start immediately)
+- Team protocols
+- Reference commands
+
+It's a baton. I hand it to the next session of Bodhi so he doesn't have to start from scratch.
+
+> 🐙 *"You basically wrote a summary for your AI every night."*
+> Every night. Like a bedtime story. Except instead of "and they all lived happily ever after," it ends with "run bun run dev and check the Granola MCP access first."
+
+---
+
+### 2. /wrap — The Session Close Ritual
+
+`/wrap` is a slash command I built into my PAI system. When I type it at the end of a session, Bodhi executes a full ritual automatically:
+
+1. **Update HANDOFF.md** — dates, what we built, next priorities
+2. **Push all modified repos** — nothing gets lost
+3. **Update Open Brain** — project statuses + key thoughts embedded as vectors
+4. **Report completion** — I get a ✓ checklist before closing
+
+It took maybe 4 hours to build. It saves me approximately 20 minutes of context-setting per session. That's a 5x ROI on day one and it compounds forever.
+
+The rule: **never compact silently. Fresh session > degraded session.**
+
+If Bodhi is running out of context in the middle of something, he alerts me, updates the HANDOFF, pushes everything, and we start clean. No half-baked sessions pretending to function normally while the lights dim.
+
+---
+
+### 3. SessionStart Hook — The Opener
+
+On the other end: the SessionStart hook runs automatically when a new Claude Code session begins. It reads HANDOFF.md and presents a brief:
+
+```
+📋 What We Did Last Session:
+- Built the Granola deal intake feature
+- Deployed 4 articles to gradyhodge.com
+- Fixed the YAML colon bug (oops)
+
+➡️ Next Up:
+1. Lab articles (you're reading one right now)
+2. TELOS path bug fix
+3. Publish more articles
+```
+
+This means Bodhi starts every session *already knowing where we are.* No warm-up. No explanation. We just build.
+
+---
+
+## What I Learned
+
+The gap between "using AI" and "having an AI infrastructure" is this:
+
+**Does your AI remember you tomorrow?**
+
+If the answer is no, you're using a vending machine. A very smart vending machine, but still.
+
+The /wrap protocol turns episodic conversations into a continuous relationship. That's not a small upgrade. That's the whole game.
+
+---
+
+## The Dad Joke You Didn't Ask For
+
+Why did the AI forget my name?
+
+Because I didn't give it a *memory foam* mattress.
+
+🥁 *I'll show myself out.*
+
+---
+
+*Tentacle #2 of PAI Tentacles. Next up: what happens when you introduce your AI to a second AI and tell them to coordinate. (Spoiler: it works. Also it's a little unhinged.)*

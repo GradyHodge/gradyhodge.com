@@ -1,0 +1,126 @@
+---
+title: What Happens When You Give an Octopus Root Access
+description: 'Cybersecurity experiments with Cern, what we''ve learned, what blew up, and the growing list of things we plan to do next. Lab notes from the deep end.'
+date: '2026-04-07'
+series: OpenClaw Tentacles
+tentacle: 2
+emoji: 🔐
+published: true
+---
+
+> **R.P.M. for this project:**
+> - **R (Results):** A working lab environment where I run security experiments, build defensive tools, and understand attack patterns well enough to protect against them.
+> - **P (Purpose):** Security is not a checkbox. It's a practice. I'm building products that handle investor data, deal flow, and government contract intelligence. I cannot afford to treat security as an afterthought.
+> - **M (M.A.P.):** Use Cern as a research assistant for security concepts. Document experiments. Build defensive tooling. List what's next. Stay legal. Stay curious.
+
+---
+
+Let me be very clear about something before we start:
+
+**This is defensive security research.** I am not breaking into things I don't own. I am not running attacks against production systems. I am learning how attacks work so I can build things that don't fall apart when someone smart tries to break them.
+
+The octopus has eight arms. Not eight handcuffs.
+
+*(This disclaimer brought to you by: I have products in production with real users and I would like to keep my reputation intact.)*
+
+---
+
+## Why Security Matters In My Stack
+
+I build things that handle sensitive data:
+- **Prospectus** — investor data, deal flow, pitch content
+- **GovOpps AI Recon** — federal contract intelligence, user data
+- **Galvanize Chat** — client conversations and proprietary briefs
+
+One IDOR vulnerability, one exposed API key, one SQL injection — and years of trust disappear in a news cycle.
+
+I've already found and fixed one Insecure Direct Object Reference (IDOR) vulnerability in GovOpps AI Recon. I caught it before adding a second beta user. That was close.
+
+Cern helps me think through attack surfaces before they become incidents.
+
+---
+
+## Experiments We've Run
+
+### Experiment 1: IDOR Surface Mapping
+
+**What:** Used Cern to systematically review every API route in Prospectus and GovOpps for IDOR vulnerabilities — places where user A could access user B's data by changing an ID in a URL.
+
+**What we found:** GovOpps had one. Prospectus had a potential one in the deal route. Both patched.
+
+**What we learned:** Sequential integer IDs are IDOR bait. UUID everywhere. Always validate ownership server-side, never trust the client.
+
+> 🐙 *"You audited your own code for security flaws?"*
+> With Cern's help, yes.
+> *"Using an AI to find vulnerabilities in AI-powered software?"*
+> It's turtles all the way down.
+
+---
+
+### Experiment 2: Prompt Injection Surface Review
+
+**What:** AI applications have a new attack surface: prompt injection. An attacker can craft input that hijacks the AI's instructions. We ran a review of every user-input-to-AI-prompt path in Galvanize Chat and GovOpps.
+
+**What we found:** A few places where unescaped user input flowed directly into prompts without sanitization.
+
+**What we learned:** Never trust user input in AI prompts. Treat it the same as SQL input — sanitize, escape, or structure around it. System prompts should be immutable; user content should be clearly delineated.
+
+---
+
+### Experiment 3: API Key Exposure Audit
+
+**What:** Reviewed all projects for hardcoded keys, `.env` file exposure, and logging that might capture secrets.
+
+**What we found:** One `.env` file that was in a deploy directory that could theoretically be served as a static file under the right (wrong) configuration.
+
+**What we learned:** `.env` files should be in `.gitignore`, verified with a `git status` check before every push. Key management is never "set and forget."
+
+---
+
+## Experiments In Progress
+
+**Rate limiting research** — testing which of my API routes are vulnerable to brute force and implementing token bucket rate limiting where missing.
+
+**VPS hardening** — Cern's server (`31.97.132.117`) is running with reasonable defaults but I want to formalize the hardening: SSH key-only, fail2ban, ufw rules, and port audit.
+
+---
+
+## Planned Experiments
+
+These are on the list. Not done yet. Documenting here so future-me has receipts:
+
+1. **Dependency audit automation** — Cern running `npm audit` and `bun audit` on a schedule and flagging critical CVEs before I deploy
+2. **Content Security Policy (CSP) implementation** — gradyhodge.com and Prospectus both need proper CSPs; currently relying too much on defaults
+3. **Session token analysis** — review how session tokens are generated, stored, and expired in Prospectus investor sessions
+4. **Subdomain enumeration of my own domains** — understand my attack surface from the outside
+5. **LLM output filtering** — building a filter layer for AI outputs that might expose system prompts or internal state to end users
+
+---
+
+## The Security Philosophy
+
+I run by three rules:
+
+**1. Assume breach.** Not "if" someone tries. "When." Design systems that contain the damage.
+
+**2. Defense in depth.** No single control is sufficient. Layer them: input validation + authentication + authorization + rate limiting + logging + alerting.
+
+**3. Test before users do.** A vulnerability found in development costs a comment in a PR. A vulnerability found by a user costs a crisis response, a disclosure, and a very bad week.
+
+Cern helps me maintain this practice as an ongoing discipline, not a one-time audit.
+
+---
+
+## The Dad Joke You Deserve
+
+Why did the security researcher bring a ladder to the lab?
+
+Because they heard the system had *high-level vulnerabilities.*
+
+🥁 *I regret nothing.*
+
+---
+
+*Tentacle #2 of OpenClaw Tentacles. More experiments coming as I run them. The lab is always open. The octopus has root access.*
+
+*All experiments conducted on systems I own or have explicit permission to test. Stay legal out there.*

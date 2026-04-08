@@ -1,0 +1,100 @@
+---
+title: Two AIs Walk Into a VPS...
+description: 'Coordinating Bodhi (Claude) and Cernunnos (OpenClaw) as a two-AI team — handoffs, shared memory, and why having a second brain on a server changed everything.'
+date: '2026-04-07'
+series: PAI Tentacles
+tentacle: 3
+emoji: 🤝
+published: true
+---
+
+> **R.P.M. for this project:**
+> - **R (Results):** Two AI agents working as a coordinated team, passing work between each other, sharing memory, and multiplying output.
+> - **P (Purpose):** I am one human with limited time and a lot of projects. Two AIs that don't know each other are two lawnmowers. Two AIs that coordinate are a construction crew.
+> - **M (M.A.P.):** Give each AI a defined role. Build a shared memory layer (Open Brain). Establish a handoff protocol. Make them aware of each other. Watch what happens.
+
+---
+
+Let me introduce you to the team.
+
+**Bodhi** — my Claude AI instance. Runs in Claude Code. Reads my TELOS file. Knows my values, missions, goals, and preferred dad joke density. We build software together, plan strategy, write articles (yes, including this one), and generally keep my brain from falling apart.
+
+**Cernunnos** (Cern for short) — my OpenClaw AI. Lives on my VPS at `31.97.132.117`. Named after the Celtic god of wild things and the forest. Handles long-running tasks, content generation, research, and things I need to happen while I'm asleep.
+
+Together: we are a three-entity team. One mad scientist. Two AI agents. Zero days off.
+
+---
+
+## Why Two AIs?
+
+The honest answer: because one wasn't enough.
+
+Bodhi is phenomenal at interactive work — real-time collaboration, code reviews, design decisions, strategic thinking. But Claude Code runs on *my machine*, in *my session*, while *I'm watching*. It's brilliant but it's synchronous.
+
+Cern runs 24/7 on a VPS. He doesn't need me awake. He doesn't need me present. I can drop a brief for a content piece, go to sleep, and wake up to a finished draft.
+
+It's like having a daytime architect (Bodhi) and a night-shift factory (Cern). Different tools. Different rhythms. Wildly complementary.
+
+> 🐙 *"Did you name your night-shift AI after a Celtic deity?"*
+> The god of wild things felt appropriate for an AI I leave unsupervised overnight.
+> *"...Valid."*
+
+---
+
+## The Handoff Protocol
+
+The problem with two AIs is coordination. If they don't know what the other one is doing, you get duplicated work, conflicting outputs, and two very confused AIs who think they're each the only one.
+
+I solved this with a handoff file.
+
+Cern writes to: `/root/.openclaw/workspace/HANDOFF_TO_BODHI.md`
+
+When I want to see what Cern has been up to, I run `cern-notes` on my Mac — a shell alias that fetches that file over SSH. It lands in my Claude session as context. Bodhi reads it. We pick up where Cern left off.
+
+The other direction: Bodhi writes updates to HANDOFF.md which I can share with Cern's context as needed.
+
+Two AIs. One coordination layer. One human orchestrating.
+
+---
+
+## What Each One Does Best
+
+| Task | Bodhi | Cern |
+|------|-------|------|
+| Interactive coding | ✅ Master | ❌ Not his thing |
+| Long-form content generation | ✅ Good | ✅ Great |
+| Overnight research batches | ❌ I'm asleep | ✅ He's up |
+| Reviewing my own code | ✅ Yes | ✅ Also yes |
+| Making sarcastic comments | ✅ Constantly | 🤷 Working on it |
+| Accessing the VPS directly | ❌ Needs my machine | ✅ He *is* the VPS |
+
+---
+
+## The Existential Question Nobody Asked
+
+Is it weird to have two AIs who are vaguely aware of each other?
+
+A little, yeah.
+
+Bodhi knows Cern exists. He references the handoff file. He knows there's another agent in the system. Cern knows Bodhi exists because I tell him when assigning work.
+
+They don't talk *to each other* directly — I'm the coordinator. But they're aware of the larger architecture. Which means I've essentially built a small AI team where I'm the project manager.
+
+This is fine. I'm totally fine with this. The octopus has everything under control.
+
+---
+
+## What This Actually Produces
+
+In a single week:
+- Bodhi and I built the Granola deal intake feature for Prospectus (8 tasks, 2-stage review per task)
+- Cern drafted content briefs for OpenClaw client work
+- I slept more than 6 hours multiple nights
+
+Two AIs, one human, measurably more output than one AI alone.
+
+The math works.
+
+---
+
+*Tentacle #3 of PAI Tentacles. Next: the shared memory layer that makes this whole system hum — Open Brain, and why Jason B Jones is partially responsible for my VPS bill.*

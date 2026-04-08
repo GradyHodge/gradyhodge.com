@@ -1,0 +1,120 @@
+---
+title: Open Brain Surgery (Nobody Was Harmed)
+description: 'Jason B Jones gave me the idea. I built it on a VPS. Now both Bodhi and Cern have shared memory — and the octopus has never been smarter.'
+date: '2026-04-07'
+series: PAI Tentacles
+tentacle: 4
+emoji: 🧬
+published: true
+---
+
+> **R.P.M. for this project:**
+> - **R (Results):** A self-hosted, vector-searchable memory system that both AI agents (Bodhi and Cern) can read and write to — simultaneously, from different machines.
+> - **P (Purpose):** AI memory that doesn't live in a corporate cloud. My thoughts, my vectors, my server. Also, because a shared brain between two AIs is genuinely one of the coolest things I've ever built.
+> - **M (M.A.P.):** Spin up pgvector on a VPS. Build a REST API wrapper. Connect Bodhi via curl in /wrap sessions. Connect Cern natively. Embed thoughts. Search semantically. Win.
+
+---
+
+This one starts with a guy named Jason B Jones.
+
+I don't remember exactly where I encountered Jason's ideas — it was somewhere in the rabbit hole of AI infrastructure content that has consumed approximately 40% of my waking hours since January 2026. But the concept stuck:
+
+**What if your AI had a memory system that wasn't controlled by the AI company?**
+
+Not OpenAI's memory. Not Anthropic's. *Yours.* On *your* server. With *your* data. Searchable by semantic meaning, not keyword. Permanent. Private. Extensible.
+
+I thought about this for approximately 72 hours and then started building.
+
+> 🐙 *"You built a second brain?"*
+> I prefer "Open Brain." More scientific.
+> *"You built a second brain on a VPS."*
+> ...yes.
+> *"How many brains do you have now?"*
+> Three if you count TELOS. Let's not think about it.
+
+---
+
+## What Open Brain Is
+
+Open Brain is a self-hosted knowledge system running on my VPS at `31.97.132.117:8789`.
+
+Under the hood:
+- **PostgreSQL** with the **pgvector** extension — stores text as high-dimensional vectors
+- **REST API** — simple endpoints for adding thoughts, updating projects, and searching semantically
+- **Two main objects:**
+  - **Thoughts** — atomic pieces of knowledge, embedded as vectors so you can search for things by *meaning* not just words
+  - **Projects** — current status, next actions, and notes for everything I'm working on
+
+The API key is mine. The data is mine. The server is mine. Nobody is training on my thoughts. Nobody is selling my context to advertisers.
+
+Just me, my VPS, and 1536-dimensional vectors. Very normal Saturday.
+
+---
+
+## The Two-Brain Problem (Solved)
+
+Here's what makes Open Brain genuinely powerful in my setup:
+
+**Both Bodhi and Cern access it at the same time.**
+
+When Bodhi wraps a session with `/wrap`, he:
+1. POSTs project status updates to Open Brain
+2. Embeds key thoughts and decisions as vectors
+3. Updates the next action for every touched project
+
+When Cern is working overnight, he can:
+1. Query Open Brain for context on any project
+2. Search semantically: "what has Gray decided about the OpenClaw content strategy?"
+3. Read current project statuses before starting work
+
+This means when I wake up and start a new session with Bodhi, *and* Cern has been working through the night — all three of us (human + 2 AIs) share a common knowledge base. We're all reading from the same brain.
+
+```
+[Bodhi] ──writes──► [Open Brain VPS] ◄──reads── [Cern]
+   ▲                      │
+   └──────reads────────────┘
+         (human via UI)
+```
+
+I built a shared workspace for two AI agents that run on different machines, in different frameworks, using different architectures.
+
+For zero dollars in software costs. (The VPS bill is real though. Hi, VPS bill.)
+
+---
+
+## Why This Is a Big Deal
+
+Most AI memory is session-local or cloud-controlled. You get memory *within* a tool, or you pay for memory *through* an API that the vendor controls.
+
+Open Brain gives me:
+
+1. **Vendor independence** — Anthropic could shut down Claude tomorrow and my memory survives
+2. **Cross-agent memory** — Bodhi and Cern share context without me manually copying information
+3. **Semantic search** — I can ask "what have I been thinking about accessibility recently?" and get relevant thoughts back, even if I never tagged them as accessibility-related
+4. **Compound value** — every session adds to it. The brain gets smarter as I work.
+
+This is Tony Robbins' M.A.P. in action: the system compounds. Today's session teaches tomorrow's AI.
+
+---
+
+## Credit Where It's Due
+
+Jason B Jones: wherever you are, whatever podcast or blog or YouTube rabbit hole led me to your ideas about personal knowledge infrastructure — thank you. You planted a seed that grew into something I use every single day.
+
+Daniel Miessler: for PAI, which taught me that personal AI infrastructure is worth building.
+
+Network Chuck: for making me stay up until 2am watching infrastructure content. I am both grateful and resentful.
+
+---
+
+## The Dad Joke You've Been Waiting For
+
+Why did the AI go to therapy?
+
+It had too many *embedded* feelings.
+
+🥁
+
+---
+
+*Tentacle #4 of PAI Tentacles — the finale of the TELOS/Bodhi/Open Brain origin story. Check the OpenClaw Tentacles series for the cybersecurity adventures.*

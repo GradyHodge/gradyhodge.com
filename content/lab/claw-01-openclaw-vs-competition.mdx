@@ -1,0 +1,126 @@
+---
+title: 'ZeroClaw vs. NanoClaw vs. OpenClaw: A Completely Unbiased* Review'
+description: '*I use OpenClaw so this is absolutely biased. A field comparison of AI agent frameworks for self-hosted, VPS-based AI work — what they do, what they cost, and which one lets you name your AI after a Celtic god.'
+date: '2026-04-07'
+series: OpenClaw Tentacles
+tentacle: 1
+emoji: 🦞
+published: true
+---
+
+> **R.P.M. for this project:**
+> - **R (Results):** A clear-eyed comparison of self-hosted AI agent frameworks so I (and you) can make an informed choice about what to run on a VPS.
+> - **P (Purpose):** The self-hosted AI space moves fast. There are a lot of options. Most comparisons are written by people trying to sell you something. This one is written by someone who broke several of them.
+> - **M (M.A.P.):** Run each framework. Observe what breaks. Document honestly. Make puns.
+
+---
+
+*Disclaimer: I use OpenClaw. I named my OpenClaw instance after a Celtic deity. I am not a neutral observer. I am, however, an honest one.*
+
+---
+
+Let's talk about claws.
+
+In the self-hosted AI agent world, there are several frameworks competing for the "run-your-own-AI-on-a-VPS" market. I've spent time with a few of them. Here's the unfiltered breakdown.
+
+---
+
+## 🦞 OpenClaw
+
+**What it is:** A self-hosted AI agent framework designed for running persistent AI workloads on a VPS. OpenClaw focuses on long-running tasks, content workflows, and coordination with external tools.
+
+**Strengths:**
+- Gateway architecture for persistent connections
+- TUI (terminal UI) for interactive sessions
+- Designed for 24/7 uptime, not just on-demand queries
+- Integrates well with file-based workflows (drop a brief, get a draft)
+- Named my instance Cernunnos. 10/10 naming support.
+
+**Weaknesses:**
+- Setup is not trivial — plan for real configuration time
+- Documentation assumes you know what you're doing
+- The gateway service needs monitoring; it will occasionally need a restart
+
+**Verdict:** My daily driver for overnight AI work. If you want an AI that runs while you sleep, this is the one.
+
+> 🦀 *The claw is mightier than the... other claw? I'll workshop this.*
+
+---
+
+## ⚡ ZeroClaw
+
+**What it is:** A lighter-weight variant focused on minimal footprint and fast startup. "Zero" refers to the minimal configuration philosophy — get running fast, add complexity later.
+
+**Strengths:**
+- Spins up quickly with minimal config
+- Lower resource requirements — runs comfortably on smaller VPS instances
+- Good for simple, stateless task execution
+
+**Weaknesses:**
+- Less suited for persistent, stateful workflows
+- Limited coordination features out of the box
+- "Zero config" sometimes means "zero flexibility when you need it"
+- Less active development at the time of writing
+
+**Verdict:** Great for getting started or running lightweight tasks. Less suitable for a full PAI setup where you want persistent memory and multi-agent coordination.
+
+---
+
+## 🔬 NanoClaw
+
+**What it is:** The microservices philosophy applied to AI agents — break everything into tiny, composable units. Each "nano" agent handles one thing and hands off to the next.
+
+**Strengths:**
+- Extremely modular — swap components without rebuilding everything
+- Interesting architecture for complex pipelines
+- Each nano agent is isolated and testable independently
+
+**Weaknesses:**
+- The coordination overhead is real. Orchestrating 12 nano agents to do what one OpenClaw session does is... a choice.
+- Debugging a pipeline of tiny agents is an adventure I describe as "instructive" rather than "fun"
+- Higher cognitive load to set up and maintain
+
+**Verdict:** Fascinating architecture. I respect the design philosophy. In practice, I spent more time wiring things together than actually getting output. YMMV.
+
+---
+
+## Head-to-Head
+
+| Feature | OpenClaw | ZeroClaw | NanoClaw |
+|---------|----------|----------|----------|
+| Setup complexity | Medium | Low | High |
+| Persistent workflows | ✅ Strong | ⚠️ Limited | ✅ Capable |
+| Resource footprint | Medium | Low | High |
+| Multi-agent coordination | ✅ Built-in | ❌ Manual | ✅ By design |
+| Naming your AI after a deity | ✅ Yes | ✅ Yes | 🤷 Technically yes |
+| Slept through a whole night while it ran | ✅ Yes | ⚠️ Kinda | ❌ Was debugging |
+
+---
+
+## The Honest Recommendation
+
+If you're building a PAI setup and you want an AI that:
+- Runs persistently on a VPS
+- Coordinates with your Claude/Bodhi sessions
+- Handles long-form content and research overnight
+- Has a name that makes you feel like a wizard
+
+**→ OpenClaw.**
+
+If you're just experimenting and want to get something running in 20 minutes:
+
+**→ ZeroClaw.**
+
+If you're a systems architect who finds pleasure in composing microservices:
+
+**→ NanoClaw (and also therapy).** *(I say this with love.)*
+
+---
+
+## What's Coming in the OpenClaw Tentacles Series
+
+Next: what I've actually been *doing* with Cern. The experiments. The weird ones. The ones that made me say "huh, that worked" and the ones that made me say "well, we're not doing *that* again."
+
+---
+
+*Tentacle #1 of OpenClaw Tentacles. The claw chronicles continue.*
