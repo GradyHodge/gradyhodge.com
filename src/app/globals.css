@@ -2,7 +2,15 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
+  /* Brand: Electric Indigo — primary accent */
   --color-accent: #6366f1;
+  /* Brand: Bioluminescent Cyan — highlights, hover states */
+  --color-cyan-brand: #22d3ee;
+  /* Brand: Phosphor Purple — tertiary accent */
+  --color-purple-brand: #a855f7;
+  /* Brand: Coral Signal — CTAs, urgency */
+  --color-coral-brand: #f97316;
+
   --font-sans: var(--font-inter), system-ui, sans-serif;
 }
 
@@ -11,7 +19,17 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #020617;
+    /* Deep Ink — brand background */
+    background-color: #0a0f1e;
     color: #f1f5f9;
+  }
+}
+
+@layer utilities {
+  .glow-cyan {
+    text-shadow: 0 0 14px #22d3ee99;
+  }
+  .glow-indigo {
+    text-shadow: 0 0 14px #6366f199;
   }
 }

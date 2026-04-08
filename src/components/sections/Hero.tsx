@@ -9,18 +9,18 @@ export function Hero() {
     >
       <div className="max-w-3xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 bg-slate-800/60 border border-slate-700 rounded-full px-4 py-1.5 text-slate-400 text-sm mb-8">
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          Available for fractional CAIO engagements
+          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+          The Eudaimonia Architect
         </div>
         <h1 className="text-6xl md:text-7xl font-bold text-slate-100 mb-4 tracking-tight">
           Gray Hodge
         </h1>
         <p className="text-lg text-indigo-400 font-medium mb-6 tracking-wide uppercase">
-          Fractional Chief AI Officer
+          AI Engineer · Fractional CAIO · Leadership Architect
         </p>
         <p className="text-xl md:text-2xl text-slate-300 mb-6 leading-relaxed max-w-2xl mx-auto">
-          I build AI systems that help small businesses compete —
-          and teach them how.
+          I build environments where excellence becomes inevitable —
+          in AI systems and in the teams that run them.
         </p>
         <div className="mb-10">
           <MottoCarousel />
@@ -36,7 +36,7 @@ export function Hero() {
           </a>
           <a
             href="#writing"
-            className="border border-slate-600 hover:border-slate-400 text-slate-300 hover:text-slate-100 px-8 py-3.5 rounded-lg font-semibold transition-colors text-base"
+            className="border border-slate-600 hover:border-cyan-400/50 text-slate-300 hover:text-cyan-400 px-8 py-3.5 rounded-lg font-semibold transition-colors text-base"
           >
             Read My Writing
           </a>
