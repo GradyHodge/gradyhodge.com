@@ -1,5 +1,6 @@
 // src/app/human/page.tsx
 import type { Metadata } from 'next'
+import { MottoSubtitle } from '@/components/MottoSubtitle'
 
 export const metadata: Metadata = {
   title: 'Human — Gray Hodge',
@@ -12,7 +13,8 @@ export default function HumanPage() {
       <div className="text-xs font-bold tracking-widest text-indigo-400 uppercase mb-4">
         Human
       </div>
-      <h1 className="text-4xl font-bold text-slate-100 mb-3">The Human Layer</h1>
+      <h1 className="text-4xl font-bold text-slate-100 mb-4">The Human Layer</h1>
+      <MottoSubtitle />
       <p className="text-slate-400 mb-10">
         Board games, recovery, lessons from hard years. The person behind the code.
       </p>
