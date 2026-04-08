@@ -1,0 +1,41 @@
+name: Publish Next Article
+
+on:
+  schedule:
+    # Monday and Thursday at 9am UTC (4am CST / 2am PST)
+    - cron: '0 9 * * 1,4'
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Publish next article
+        run: node scripts/publish-next.mjs
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/writing/
+          git commit -m "publish: release next article [skip ci]"
+          git push

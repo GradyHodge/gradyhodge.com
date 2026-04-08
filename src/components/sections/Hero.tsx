@@ -1,4 +1,6 @@
 // src/components/sections/Hero.tsx
+import { MottoCarousel } from '@/components/MottoCarousel'
+
 export function Hero() {
   return (
     <section
@@ -16,10 +18,13 @@ export function Hero() {
         <p className="text-lg text-indigo-400 font-medium mb-6 tracking-wide uppercase">
           Fractional Chief AI Officer
         </p>
-        <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto">
+        <p className="text-xl md:text-2xl text-slate-300 mb-6 leading-relaxed max-w-2xl mx-auto">
           I build AI systems that help small businesses compete —
           and teach them how.
         </p>
+        <div className="mb-10">
+          <MottoCarousel />
+        </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="https://galvanizedesigns.com"

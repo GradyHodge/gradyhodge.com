@@ -11,6 +11,7 @@ export interface ArticleMeta {
   description: string
   date: string
   pillar: string
+  published: boolean
 }
 
 export interface Article extends ArticleMeta {
@@ -28,6 +29,7 @@ export function getArticle(slug: string): Article | null {
     description: data.description as string,
     date: data.date as string,
     pillar: data.pillar as string,
+    published: data.published === true,
     content: content.trim(),
   }
 }
@@ -37,6 +39,6 @@ export function getArticles(): Article[] {
   const files = fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.mdx'))
   return files
     .map(file => getArticle(file.replace('.mdx', '')))
-    .filter((a): a is Article => a !== null)
+    .filter((a): a is Article => a !== null && a.published)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
