@@ -4,6 +4,19 @@ _Generated: 2026-04-07_
 
 ---
 
+## MAIN PERSONAL MOTTO
+
+1. **Accelerate, Expand, Become, Accomplish**
+   - learn at an accelerated rate
+   - expand my mind to its fullest capacity
+   - become my best self
+   - accomplish all the Lord has for me to do
+
+## Quotes I live by
+
+1. **Never let a good crisis go to waste.** ~Winston Churchill
+2. **The Obstacle is the way.** ~ Marcus Aurelius
+
 ## AUTHORITY & EXCELLENCE
 
 1. Excellence is not a performance. It's a structure.

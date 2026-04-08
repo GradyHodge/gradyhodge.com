@@ -8,7 +8,7 @@ _Generated: 2026-04-07 | Career Mentor & PR Build_
 
 ### The One-Sentence Brand
 
-**Gray Hodge engineers the conditions for human flourishing — inside teams, technology, and organizations — through creative solutions, relentless excellence, and the deliberate architecture of safety.**
+**Gray Hodge engineers the conditions for human flourishing — inside teams, technology, and organizations — through creative solutions, relentless excellence, and the deliberate architecture of sanctuary.**
 
 ### Brand Archetype
 
@@ -89,7 +89,7 @@ _Copy this section into TELOS.md → RESUME → WORK EXPERIENCE (replace current
 
 **AI Engineer & Technology Consultant (01/2024 – Present)**
 Galvanize Designs | Full-Time Remote
-*Skill Sets: Claude API, Anthropic, Next.js 15, TypeScript, Tailwind CSS, Bun, Cloudflare Pages, Cloudflare Workers, Supabase, postgres.js, ElevenLabs, Perplexity API, SAM.gov API, AEM 6.5, WCAG 2.2 AA, ManyChat, n8n, OpenClaw, Claude Code, PAI/TELOS/Fabric, Wrangler CLI, GitHub, Agile*
+_Skill Sets: Claude API, Anthropic, Next.js 15, TypeScript, Tailwind CSS, Bun, Cloudflare Pages, Cloudflare Workers, Supabase, postgres.js, ElevenLabs, Perplexity API, SAM.gov API, AEM 6.5, WCAG 2.2 AA, ManyChat, n8n, OpenClaw, Claude Code, PAI/TELOS/Fabric, Wrangler CLI, GitHub, Agile_
 
 **AI-Powered Products Built & Shipped (Live in Production):**
 
@@ -123,7 +123,7 @@ Galvanize Designs | Full-Time Remote
 
 **Front End Web Developer (01/2017 – 12/2023)**
 Galvanize Designs | McKinney, TX
-*Skill Sets: HTML5, CSS3, JavaScript, WordPress CMS, PHP*
+_Skill Sets: HTML5, CSS3, JavaScript, WordPress CMS, PHP_
 
 - Designed and built responsive client websites using storyboarding and wireframes — sub-2-second load times, parallax scrolling, customized security configurations
 - Built full-featured client site (millenniuminspections.com) with landing page, Google Maps API, email, contact form, CRM integration, and booking application
@@ -134,17 +134,20 @@ Galvanize Designs | McKinney, TX
 ## BRAND ASSETS — QUICK REFERENCE
 
 **Headline options (LinkedIn / proposals):**
+
 - AI Engineer · Technology Leader · Eudaimonia Architect
 - Building the Conditions for Human Flourishing Through AI and Leadership
 - I Engineer Environments Where Excellence Becomes Inevitable
 - AI Engineer | Enterprise CMS | Leadership Culture Architect
 
 **Taglines:**
+
 - Build Safe. Lead Strong. Deliver Excellence.
 - The Obstacle Is the Way — and I Know the Route.
 - Creative Solutions. Safe Environments. Measurable Outcomes.
 - Where AI Meets Human Flourishing.
 - I Don't Just Solve Problems. I Build the Conditions That Prevent Them.
+
 ---
 
 # 50 Mottos, Slogans & One-Liners — Gray Hodge
@@ -236,14 +239,15 @@ _Generated: 2026-04-07_
 - "A career portfolio isn't a résumé. It's evidence that you solved specific problems no one else could."
 - "The best investment I ever made was learning to ask all the dumb questions."
 
-
 ---
 
 ---
+
 title: The 5 Types of Safety Every Leader Must Create
 description: Most leaders think safety means hard hats and fire exits. There are four more types — and they're the ones that determine whether your team flourishes or quietly disengages.
 date: '2026-04-07'
 pillar: Eudaimonia Leadership
+
 ---
 
 When most people hear "workplace safety," they think hard hats and fire exits. That's physical safety — and yes, it matters. But in 16 years of leading teams, I've come to understand that physical safety is just the entry point. There are four more types that determine whether your team will merely survive — or genuinely flourish.
@@ -288,14 +292,15 @@ When all five are present, something remarkable happens. People stop protecting 
 
 The workplace you want is not the result of good intentions. It's the result of deliberate design.
 
-
 ---
 
 ---
+
 title: Eudaimonia Is Not a Buzzword — It's a Leadership Standard
 description: Aristotle's concept of human flourishing isn't philosophy for a conference room. It's a measurable, engineerable outcome — and the best leaders are already building it.
 date: '2026-04-08'
 pillar: Eudaimonia Leadership
+
 ---
 
 Aristotle coined eudaimonia over 2,300 years ago. Most people translate it as "happiness." That's an inadequate translation. A more accurate rendering: the state of flourishing that comes from living and working according to your highest capacities.
@@ -344,14 +349,15 @@ I've watched it work at scale — 65 developers, 5,000 pages, 20 product teams. 
 
 Give people those conditions. The performance follows.
 
-
 ---
 
 ---
+
 title: How I Build Subject Matter Experts from Any Team
 description: The SME model isn't about hiring the best talent. It's about systematically developing the authority that's already sitting in the room.
 date: '2026-04-09'
 pillar: Eudaimonia Leadership
+
 ---
 
 The best thing I've ever done as a leader is give people problems that are slightly too big for them — and then make sure they had everything they needed to solve them.
@@ -396,14 +402,15 @@ The measure of my leadership isn't the work I produce. It's the number of subjec
 
 That's the standard. And it scales wherever you take it.
 
-
 ---
 
 ---
+
 title: The 4 Levers Every Leader Can Pull Right Now
 description: Forget the things you can't control. Every leader has exactly four levers that determine team performance. Pull the right ones.
 date: '2026-04-10'
 pillar: Eudaimonia Leadership
+
 ---
 
 Early in my leadership career, I spent a lot of energy on things I couldn't control: organizational politics, budget decisions, executive priorities that shifted without warning. I was frustrated constantly, convinced that the results I wanted were being blocked by forces outside my influence.
@@ -454,14 +461,15 @@ Four levers. They're all yours. The leaders who produce consistent, excellent re
 
 You don't need more authority to lead. You need to use the leverage you already have.
 
-
 ---
 
 ---
+
 title: "Be Kind, Be Patient, Be Professional: My Three-Word Management Philosophy"
 description: Three words sounds too simple to be a management philosophy. It isn't. This three-word standard has produced results at every level I've led.
 date: '2026-04-11'
 pillar: Eudaimonia Leadership
+
 ---
 
 When I took over the AEM authoring team at U.S. Bank, I inherited a complex situation: 65 developers spread across onshore and offshore teams, 20 product lines with competing priorities, and a culture that hadn't decided yet whether collaboration or competition was the operating model.
@@ -506,14 +514,15 @@ And it gives me a clear standard to lead by.
 
 Try it in your next difficult conversation. Be kind. Be patient. Be professional. See what happens when you stop reacting and start responding.
 
-
 ---
 
 ---
+
 title: Why I Give Away Credit — And Why It Makes Me More Powerful
 description: Counterintuitively, the leaders who give away the most credit accumulate the most authority. Here's why — and how.
 date: '2026-04-12'
 pillar: Eudaimonia Leadership
+
 ---
 
 There's a scarcity mindset in most organizations around credit. Leaders accumulate it. They attribute wins upward to themselves and failures downward to their teams. They treat recognition as a finite resource that must be hoarded.
@@ -558,14 +567,15 @@ Giving credit is a compounding investment. You don't spend it. You multiply it.
 
 Be generous with credit. The authority that returns to you will be earned, specific, and durable — not borrowed from a title.
 
-
 ---
 
 ---
+
 title: Remove Ego from the Room — Watch What Happens to Performance
 description: Ego is the most expensive operational cost most organizations never measure. Here's what it costs — and what you get when you eliminate it.
 date: '2026-04-13'
 pillar: Eudaimonia Leadership
+
 ---
 
 Ego isn't loud. That's the thing people miss. The loudest person in the room is easy to identify and manage. The real damage happens quietly — in the small decisions people make when they feel they have something to protect.
@@ -614,14 +624,15 @@ The obstacle to that team is rarely talent. It's almost always the unspoken thre
 
 Remove the threat. Watch what grows in its place.
 
-
 ---
 
 ---
+
 title: There Are Always Two Sides — The Listening Framework That Builds Trust
 description: The fastest way to earn authority in a conflict is to be the person who actually heard both sides before responding. Most people skip this. Don't.
 date: '2026-04-14'
 pillar: Eudaimonia Leadership
+
 ---
 
 I learned one of the most important lessons of my leadership career by being wrong about someone I thought I understood completely.
@@ -670,14 +681,15 @@ There are always two sides. The second one is often the more important one.
 
 Listen for it. Lead from it.
 
-
 ---
 
 ---
+
 title: Ask the Dumb Questions. Build the Smart Teams.
 description: The person asking all the dumb questions in the room is usually the person with the best grasp of reality. Here's why — and how to make it a leadership strategy.
 date: '2026-04-15'
 pillar: Eudaimonia Leadership
+
 ---
 
 I made a decision early in my career that most people consider a liability and I consider one of my greatest professional assets: I became the person who asks all the questions.
@@ -720,14 +732,15 @@ The team that asks questions freely moves faster than the team that asks none. N
 
 Ask the dumb questions. Build the smart teams.
 
-
 ---
 
 ---
+
 title: "It's Not Just What You Produce — It's How You Got It Done"
 description: Output metrics capture what you made. They don't capture whether it was worth making that way. The leaders who understand both build the teams worth staying on.
 date: '2026-04-16'
 pillar: Eudaimonia Leadership
+
 ---
 
 Every performance review I've ever given includes a conversation that doesn't appear on any standard rubric.
@@ -776,14 +789,15 @@ How you get things done is the measure that follows you from role to role, organ
 
 Get the result. Do it right.
 
-
 ---
 
 ---
+
 title: Building a Personal AI Infrastructure Changed How I Think
 description: A personal AI that actually knows you — your values, your goals, your work — is a different category of tool. Here's what building one taught me.
 date: '2026-04-17'
 pillar: AI Engineering
+
 ---
 
 Most people use AI the way they use a search engine: type a question, get an answer, close the tab. The AI has no idea who you are. Every conversation starts from zero. The output is generic because the input is generic.
@@ -826,14 +840,15 @@ It takes work to build. It takes discipline to maintain. It pays back in compoun
 
 The AI revolution doesn't have to make us more generic. Properly deployed, it can make us more ourselves.
 
-
 ---
 
 ---
+
 title: The Zero-Budget AI Stack That Powers Three Live Products
 description: I built and shipped three AI-powered products in 2026 with zero infrastructure spend. Here's the stack, the reasoning, and what it proves about building AI at any scale.
 date: '2026-04-18'
 pillar: AI Engineering
+
 ---
 
 In 2026, I shipped three live AI-powered products. They're in production. They have real users. And my monthly infrastructure bill is approximately zero.
@@ -878,14 +893,15 @@ The tools exist. The stack is mature. The cost of shipping your first AI product
 
 The only thing that's expensive is waiting.
 
-
 ---
 
 ---
+
 title: How I Built a Government Contract Intelligence Platform with AI
 description: From zero to production: the architecture, decisions, and AI implementation behind Recon AI — a federal contract scoring and proposal platform built on the Anthropic stack.
 date: '2026-04-19'
 pillar: AI Engineering
+
 ---
 
 Government contracting is a $700 billion market. Most small businesses and veteran-owned firms miss 90% of the relevant opportunities — not because they lack capability, but because finding, evaluating, and responding to federal contracts is operationally brutal.
@@ -924,14 +940,15 @@ That pattern applies across industries. Healthcare RFPs. Commercial real estate 
 
 Build the scoring layer. Ship the decision tool. That's AI engineering that creates real value.
 
-
 ---
 
 ---
+
 title: "From AEM Author to AI Engineer: What the Transition Actually Looks Like"
 description: The path from enterprise content management to AI engineering isn't as far as it looks. Here's how the skills transfer — and what you actually need to build.
 date: '2026-04-20'
 pillar: AI Engineering
+
 ---
 
 Five years ago, my expertise was Adobe Experience Manager — enterprise content management at scale. I knew AEM 6.2 through 6.5. I knew the DAM, WCM, content fragments, dispatcher configuration, and the accessibility standards required to keep 5,000 pages compliant.
@@ -970,14 +987,15 @@ The transition is available. The skills are learnable. The market is enormous.
 
 Start building.
 
-
 ---
 
 ---
+
 title: "AI-Augmented Learning: Expanding Your Mind at Accelerated Speed"
 description: AI doesn't just help you work faster. When deployed deliberately, it helps you learn more deeply, retain more effectively, and develop expertise at a rate that wasn't previously possible.
 date: '2026-04-21'
 pillar: AI Engineering
+
 ---
 
 My motto is Accelerate, Expand, Become.
@@ -1020,14 +1038,15 @@ Accelerate. Expand. Become.
 
 The tools exist. The question is whether you'll use them deliberately.
 
-
 ---
 
 ---
+
 title: The Case for Self-Hosted AI — Why I Run My Own Agents
 description: Cloud AI tools are convenient. Self-hosted AI agents are sovereign. For personal data, sensitive client work, and persistent memory — ownership matters.
 date: '2026-04-22'
 pillar: AI Engineering
+
 ---
 
 Most people use AI tools they don't own, running on servers they've never seen, processing data they've agreed to in terms of service nobody reads.
@@ -1074,14 +1093,15 @@ That context doesn't exist in any cloud AI tool. It exists because I built the i
 
 That's the return on the investment. A personal AI that knows more about your work with every session — because it owns the memory.
 
-
 ---
 
 ---
+
 title: AI Doesn't Take Your Job — It Takes Your Excuses
 description: The AI revolution is real. The narrative about job displacement is mostly wrong. Here's what's actually happening — and what it requires from you.
 date: '2026-04-23'
 pillar: AI Engineering
+
 ---
 
 People are stressed about AI. I understand why. The coverage is alarming, the pace of change is genuinely disorienting, and the range of predictions — from "AI creates more jobs than it displaces" to "AI ends human labor within a decade" — is wide enough to justify any level of anxiety.
@@ -1123,14 +1143,15 @@ That's not a threat to your career. It's the most interesting professional oppor
 
 The question is whether you'll use the tools — or wait until someone who did takes the work you were saving your excuses for.
 
-
 ---
 
 ---
+
 title: Creative Solutions Are My Highest Core Value — Here's Why
 description: Not creativity as a personality trait. Creative solutions as a deliberate professional discipline — the practice of finding the answer no one else saw.
 date: '2026-04-24'
 pillar: Creative Problem Solving
+
 ---
 
 My soul resonates at its highest level when I recognize and implement a unique solution to a problem that makes life's purpose easier and more enjoyable.
@@ -1175,14 +1196,15 @@ I think of ideas no one has ever thought of before as one of my life's purposes.
 
 That's a practice, not a talent. And it's available to anyone willing to do the work.
 
-
 ---
 
 ---
+
 title: "The Obstacle Is the Way — My Framework for Professional Problem-Solving"
 description: Marcus Aurelius had it right 2,000 years ago. The obstacle isn't in the way — it IS the way. Here's how that philosophy works as an operational framework.
 date: '2026-04-25'
 pillar: Creative Problem Solving
+
 ---
 
 Marcus Aurelius wrote it in the second century: the impediment to action advances action. What stands in the way becomes the way.
@@ -1225,14 +1247,15 @@ The obstacle is the way. It always has been.
 
 The only question is whether you're willing to walk through it deliberately — or wait until you have no other choice.
 
-
 ---
 
 ---
+
 title: Build a Career Portfolio Around the Problems You Solve
 description: A résumé lists where you worked. A portfolio proves what you solved. The second one is worth ten times more in an AI-augmented market.
 date: '2026-04-26'
 pillar: Creative Problem Solving
+
 ---
 
 The résumé is dying. Not completely — employers still ask for them, and they'll ask for them for years. But the résumé as the primary evidence of professional value is losing ground fast to something more compelling: the problem-specific career portfolio.
@@ -1281,14 +1304,15 @@ Build the portfolio. Make it specific. Make it evidence.
 
 The market is already rewarding it.
 
-
 ---
 
 ---
+
 title: "How Systems Thinking Turns Any Problem Into a Solvable Process"
 description: Most professionals try to solve problems one at a time. Systems thinkers see the structure that produces problems in batches — and fix the structure.
 date: '2026-04-27'
 pillar: Creative Problem Solving
+
 ---
 
 There's a category of professional I've worked with my entire career who spends most of their time putting out fires. They're good at it. They move fast, they're responsive, they handle crises with competence. And they're exhausted.
@@ -1331,14 +1355,15 @@ Find that structure. Change it. The problem stops recurring.
 
 That's leverage. That's how one engineer with the right mental model outproduces a whole team treating symptoms.
 
-
 ---
 
 ---
+
 title: Why I Think in Projects, Not Tasks
 description: Tasks are things you complete. Projects are things that change you. The professional who thinks in projects builds expertise, portfolio, and career architecture simultaneously.
 date: '2026-04-28'
 pillar: Creative Problem Solving
+
 ---
 
 There's a difference between being busy and building something. Most professionals spend their careers on the busy side of that line. The task list is always full. Progress happens. But the compound effect — the kind that turns effort into expertise, projects into a portfolio, and work into a career narrative — never materializes.
@@ -1358,6 +1383,7 @@ The important property: every project I take on represents a specific problem I'
 I use the TELOS method to map any project back to why it exists: Problems → Mission → Goals → Projects. This matters because projects that aren't connected to a real problem — a problem worth solving — have a tendency to drift, stall, or expand infinitely.
 
 Before I start a project, I can answer:
+
 - What problem is this solving?
 - Why does solving this problem matter to my mission?
 - What does success look like, precisely?
@@ -1383,14 +1409,15 @@ Think in projects. Map them to real problems. Document them as evidence.
 
 Build the career architecture deliberately, one project at a time.
 
-
 ---
 
 ---
+
 title: What a Quest for Excellence Actually Requires
 description: Excellence isn't intensity. It's a set of specific disciplines applied consistently — over time, under pressure, when no one is watching.
 date: '2026-04-29'
 pillar: Excellence and Growth
+
 ---
 
 I've been described in performance reviews as someone with a "quest for excellence." The phrase shows up in my own values document. I use it deliberately because it's accurate — but I want to be specific about what it means.
@@ -1439,14 +1466,15 @@ Not perfect conditions. Actual conditions.
 
 If the answer is yes — that's excellence. If the answer is no — I'm not done yet.
 
-
 ---
 
 ---
+
 title: "Accelerate, Expand, Become: My Framework for Rapid Skill Acquisition"
 description: Three words that function as an operating system for professional development — how I approach learning new skills, domains, and technologies at speed.
 date: '2026-04-30'
 pillar: Excellence and Growth
+
 ---
 
 My motto is three words: Accelerate, Expand, Become.
@@ -1493,14 +1521,15 @@ Apply it to the next skill you need. Track the first 20 hours. Build the cogniti
 
 The skill comes faster than you expect when you treat acquisition as a system, not a hope.
 
-
 ---
 
 ---
+
 title: Tenacity Is a Professional Skill — And You Can Train It
 description: Tenacity isn't a personality trait you either have or don't. It's a trainable discipline — and the professionals who build it on purpose have a distinct advantage.
 date: '2026-05-01'
 pillar: Excellence and Growth
+
 ---
 
 When people describe me as tenacious, they usually mean it as a compliment toward a fixed trait. As in: Gray is just built that way. He doesn't quit.
@@ -1539,14 +1568,15 @@ Tenacity is the discipline of earning the compound interest.
 
 Build it on purpose. The returns are disproportionate.
 
-
 ---
 
 ---
+
 title: How to Design Your Career Around Who You Are Becoming
 description: Most careers are built reactively — next opportunity, next title, next paycheck. The rarer path is proactive: designing your career around a specific identity you're building toward.
 date: '2026-05-02'
 pillar: Excellence and Growth
+
 ---
 
 The default career is reactive. An opportunity appears. You take it. Another opportunity appears. You take it. Ten years later, you have a résumé that tells a coherent story only in retrospect — and sometimes not even then.
@@ -1589,14 +1619,15 @@ The largest career advances I've made have come from identity shifts, not creden
 
 Your identity precedes your opportunity. Change who you are becoming. The market responds.
 
-
 ---
 
 ---
+
 title: Finishing What You Start Is the Rarest Form of Discipline
 description: The world is full of starters. Finishers are rare — and the gap between the two is almost entirely about discipline, not talent.
 date: '2026-05-03'
 pillar: Excellence and Growth
+
 ---
 
 I've been in enough professional environments to notice a pattern: the people with the most ideas are rarely the people who finish the most things.
@@ -1635,14 +1666,15 @@ The compounding is the point.
 
 Finish the thing. The next start is better for it.
 
-
 ---
 
 ---
+
 title: "The Career Portfolio: Building Authority Around Specific Problems"
 description: Authority in a market isn't declared — it's demonstrated. The career portfolio is how you demonstrate it, problem by problem, project by project.
 date: '2026-05-04'
 pillar: Excellence and Growth
+
 ---
 
 The career advice I wish I'd received earlier: stop trying to be generally excellent. Be specifically excellent at solving problems that matter.
@@ -1691,14 +1723,15 @@ Authority is the compounded return on a portfolio of finished, documented, speci
 
 Build it deliberately. Document it rigorously. The market finds the authority it needs when you've made it specific enough to find.
 
-
 ---
 
 ---
+
 title: Never Let a Good Crisis Go to Waste — Churchill Was Right About Work Too
 description: Churchill's wartime counsel was actually timeless leadership wisdom: crises create the conditions for changes that comfort never permits.
 date: '2026-05-05'
 pillar: Creative Problem Solving
+
 ---
 
 Winston Churchill delivered some version of this line to the British people at the worst moment of World War II — cities being bombed, casualties mounting, the end unclear.
@@ -1743,14 +1776,15 @@ The skill, the relationship, the process improvement, the strategic clarity. The
 
 Never let a good crisis go to waste. Have your answer ready before the window opens.
 
-
 ---
 
 ---
+
 title: Why Every Knowledge Worker Needs a Personal AI Stack in 2026
 description: Generic AI tools give everyone the same thing. A personal AI stack gives you something no one else has — leverage built around your specific work, values, and goals.
 date: '2026-05-06'
 pillar: AI Engineering
+
 ---
 
 Every knowledge worker has access to the same AI tools. ChatGPT, Claude, Gemini — they're all available, they're all powerful, and they all have the same limitation: they know nothing about you.
@@ -1764,6 +1798,7 @@ This is why a personal AI stack is not a luxury. It's a leverage gap that will w
 A personal AI stack is an AI system configured specifically around you: your identity, your work, your goals, your active projects, and your accumulated knowledge. Instead of starting from zero, it starts from your context.
 
 At minimum, this means:
+
 - A persistent document that captures who you are, what you value, and what you're working on
 - A session memory system that retains what was decided and why
 - A workflow integration that makes the AI a natural part of how you actually work
@@ -1787,6 +1822,7 @@ That gap compounds. It's already opening.
 ## What to Build First
 
 The starting point is a context document — what I call a TELOS file. A document that contains, at minimum:
+
 - Your core professional values
 - Your current active goals
 - Your active projects and their current status
@@ -1803,14 +1839,15 @@ The knowledge workers who build this in 2026 will have a tool in 2027 that no on
 
 Build the stack. Start today.
 
-
 ---
 
 ---
+
 title: "The TELOS Method: Using AI to Understand Yourself Better"
 description: The oldest questions in philosophy — who am I, what matters, why am I here — turn out to be the most useful questions to answer before pointing AI at your work.
 date: '2026-05-07'
 pillar: AI Engineering
+
 ---
 
 The word telos is Greek. Aristotle used it to mean the ultimate purpose or end of something — the final cause, what a thing is moving toward at its deepest level.
@@ -1861,14 +1898,15 @@ Start there. Load it into your AI sessions. Ask: given what you know about me, w
 
 The answers improve immediately. And the document — like the AI relationship — compounds with every session.
 
-
 ---
 
 ---
+
 title: Articulate the Problem Better Than the Stakeholder — Appear as the Expert
 description: The fastest way to establish authority in any room is to demonstrate that you understand the problem more precisely than the person who brought it to you.
 date: '2026-05-08'
 pillar: Eudaimonia Leadership
+
 ---
 
 There's a technique I've used in every leadership role I've had. It's simple, it's learnable, and it works consistently enough that I teach it to every team I build.
@@ -1909,14 +1947,15 @@ The payoff: authority that doesn't require a title to function. The room positio
 
 That's the kind of authority you take with you.
 
-
 ---
 
 ---
+
 title: The Empath as Professional Advantage — Reading What Others Miss
 description: Empathy is usually framed as a personal quality. In professional environments, it's a precision instrument — one of the highest-value capabilities a leader can develop.
 date: '2026-05-09'
 pillar: Eudaimonia Leadership
+
 ---
 
 Empathy in professional settings carries a reputation problem. It sounds soft. It sounds emotional. It sounds like the thing you prioritize when you can't deliver hard results.
@@ -1957,14 +1996,15 @@ When people feel seen, they contribute more. They take risks they wouldn't take 
 
 The empathic leader doesn't just manage a team. They unlock one.
 
-
 ---
 
 ---
+
 title: "We May Not Be the Problem — But We Are the Solution"
 description: The most empowering reframe in organizational life: whether or not you caused a problem, you still have the power to solve it.
 date: '2026-05-10'
 pillar: Eudaimonia Leadership
+
 ---
 
 One of the lines I've said most often as a leader — and the one that tends to change the energy in a room fastest — is this:
@@ -2009,14 +2049,15 @@ We may not be the problem. But we are the solution.
 
 That's where I start. And it's where I lead.
 
-
 ---
 
 ---
+
 title: Hire for Heart Over Talent — Every Time
 description: Talent is common. The right character is rare — and it's the variable that determines whether talent gets deployed effectively or destructively.
 date: '2026-05-11'
 pillar: Eudaimonia Leadership
+
 ---
 
 I've hired a lot of people. When I was building the AEM development team at U.S. Bank, I hired 65 contractors over three years. The attrition rate — people who left or were let go early — was low. Consistently lower than comparable teams.
@@ -2066,14 +2107,15 @@ The person who is good enough and hungry to become great will get there faster t
 
 Hire for heart. Train for talent. Build the culture that turns both into excellence.
 
-
 ---
 
 ---
+
 title: Take Initiative — Speak Up First, Don't Wait
 description: The worst place to have a heart attack is on a crowded sidewalk — because everyone assumes someone else is handling it. Don't be everyone.
 date: '2026-05-12'
 pillar: Eudaimonia Leadership
+
 ---
 
 There's a famous study in psychology about diffusion of responsibility. When one person witnesses an emergency, they help 70% of the time. When five people witness the same emergency, the help rate drops to 20% — because everyone assumes someone else will handle it.
@@ -2094,7 +2136,7 @@ Speaking first is a service to the room. Not heroism — function.
 
 ## The Practice
 
-I've made it a discipline: when I see a problem, I name it. Specifically, without drama, without blame assignment. "I want to flag something before we move forward." 
+I've made it a discipline: when I see a problem, I name it. Specifically, without drama, without blame assignment. "I want to flag something before we move forward."
 
 Then I state what I see, as precisely as I can. Not an editorial — an observation. Here is what I notice. Here is the concern. Here is the question I'd want answered before I'd feel confident about this direction.
 
@@ -2116,14 +2158,15 @@ You don't have to have the solution when you raise the problem. You just have to
 
 That's the discipline. And it saves more projects than any technical skill I've ever had.
 
-
 ---
 
 ---
+
 title: Celebrate the Right of Passage — Building a Team Culture That Learns
 description: The moment a new team member breaks the code for the first time is one of the highest-leverage events in team building. How you respond to it defines the culture you're building.
 date: '2026-05-13'
 pillar: Eudaimonia Leadership
+
 ---
 
 Every team I've ever built has a version of this moment: a new team member, still learning the environment, does something for the first time. They figure out a configuration that's been tripping everyone up. They navigate a process that confuses new hires. They break the code.
@@ -2174,14 +2217,15 @@ Because everyone knows: when I figure something out, the team will notice. And w
 
 That's the culture worth building. It starts with one deliberate moment, repeated consistently, until the team believes it.
 
-
 ---
 
 ---
+
 title: Stand for What Is Right — The Paladin Standard in Professional Life
 description: The Paladin archetype isn't a fantasy character. It's a real professional mode: the person who speaks up, takes initiative for justice, and acts on principle when others wait.
 date: '2026-05-14'
 pillar: Excellence and Growth
+
 ---
 
 I cannot sit idly by and not be the first to take initiative to address the needs of those around me.
@@ -2227,14 +2271,15 @@ That's not idealism. It's a professional standard.
 
 Hold it. The teams you build will be better for it.
 
-
 ---
 
 ---
+
 title: The Accessibility Imperative — Why WCAG Is a Leadership Issue, Not Just a Technical One
 description: Accessibility compliance gets treated as a technical checkbox. It's actually a values question — and the teams that treat it that way produce better outcomes at every level.
 date: '2026-05-15'
 pillar: AI Engineering
+
 ---
 
 In 2021, I inherited responsibility for WCAG accessibility compliance across 5,000 live web pages at a Fortune 500 bank. My team hadn't been prepared for it. The timeline was aggressive. The tools were inadequate.
@@ -2275,14 +2320,15 @@ That moment — someone early in their career holding the standard against someo
 
 That's the outcome worth building. Not passing an audit. Building a team that wouldn't ship inaccessible work even if you asked them to.
 
-
 ---
 
 ---
+
 title: The Voice of the Educator — Teaching Complex Systems to Anyone
 description: The ability to translate technical complexity into understanding anyone can act on is one of the most valuable and rare professional skills. Here's how I approach it.
 date: '2026-05-16'
 pillar: Excellence and Growth
+
 ---
 
 I've taught every age group from three years old to eighty-nine. Not all of them were in classrooms or conference rooms — some were in living rooms, some were on the street, some were in coma recovery. The range is wide enough that I've had to learn one thing deeply: understanding how someone learns is more important than knowing what you're teaching.
@@ -2323,14 +2369,15 @@ The knowledge that stays in your head is the knowledge that doesn't compound. Sh
 
 That's when the real work becomes possible.
 
-
 ---
 
 ---
+
 title: What 10 Years of Enterprise CMS Taught Me About Building AI Systems
 description: The lessons from managing 5,000 web pages at enterprise scale translate directly into the principles that govern well-architected AI systems.
 date: '2026-05-17'
 pillar: AI Engineering
+
 ---
 
 I spent ten years in Adobe Experience Manager. At U.S. Bank, I coordinated 65 developers across 5,000 pages and 20 product teams. I built DAM governance systems, content fragment libraries, multi-site management processes, and accessibility compliance programs.
@@ -2377,14 +2424,15 @@ The domain vocabulary is different. The underlying architectural principles are 
 
 Bring your scale experience. Apply it deliberately. The AI systems that survive contact with real organizations are built by people who've already learned those lessons somewhere else.
 
-
 ---
 
 ---
+
 title: The Philanthropist Model of Leadership — Wealth Built to Share
 description: The highest form of professional wealth isn't what you accumulate — it's what you give away in ways that come back multiplied.
 date: '2026-05-18'
 pillar: Eudaimonia Leadership
+
 ---
 
 My soul takes flight when I have an opportunity to share my abundant life.
@@ -2421,14 +2469,15 @@ My wealth of life is built up to be shared. That's not idealism — it's a profe
 
 The generous leader rarely suffers from scarcity. They've built a network that prevents it.
 
-
 ---
 
 ---
+
 title: The Compound Learning Strategy — Why What You Learn Now Multiplies Later
 description: Most professionals treat learning as linear — more input, more output. Compound learning is different. Here's how to build a learning system that accelerates itself.
 date: '2026-05-19'
 pillar: Excellence and Growth
+
 ---
 
 Einstein — or someone plausibly attributed to Einstein — called compound interest the eighth wonder of the world. The same principle applies to learning, and the professionals who understand this early build advantages that become impossible to close later.
