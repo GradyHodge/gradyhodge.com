@@ -637,9 +637,9 @@ pillar: Eudaimonia Leadership
 
 I learned one of the most important lessons of my leadership career by being wrong about someone I thought I understood completely.
 
-I had a stepdaughter I considered difficult — reactive, dramatic, causing problems with the rest of the family. I had a stepson I thought was steady and dependable. For years, I operated from that model.
+I had a coworker on my team I considered difficult — reactive, dramatic, causing problems with the rest of the company. I had an admin on my team who I thought was steady and dependable. For years, I operated from that model.
 
-Then, slowly, the real picture emerged. The steady one had been quietly positioning the difficult one — managing perceptions, shaping narratives, creating the appearance I had accepted as fact.
+Then, slowly, the real picture emerged. The steady one had been quietly positioning the difficult one — managing perceptions, shaping narratives, creating the appearance I had accepted as fact. They were submarining the other person making them look bad in my eyes.
 
 There were always two sides. I had only heard one.
 
