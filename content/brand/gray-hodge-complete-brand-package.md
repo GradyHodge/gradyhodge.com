@@ -16,19 +16,27 @@ _Generated: 2026-04-07 | Career Mentor & PR Build_
 
 ### Our Core Character
 
--
+We are galvanizers — people who ignite the spark that transforms apathy into action. We are builders who take complex problems and engineer clear solutions. We are educators who multiply expertise rather than hoard it. We are relentless in our pursuit of work that actually matters — and deeply uninterested in work that doesn't.
 
 ### Our Fundamental Values
 
--
+- **Creative Solutions** — The best answer is rarely the first one. We think longer than other people quit.
+- **Excellence as Structure** — Not a performance, not an aspiration. It's the floor we build on.
+- **Human Augmentation** — AI exists to expand what you can do, not replace who you are.
+- **Psychological Safety** — People do their best work when they work without fear.
+- **Integrity in Execution** — We finish what we start. Our word is our architecture.
 
 ### Our Guiding Beliefs
 
--
+- The next phase of human potential belongs to builders, not workers.
+- AI should be a personal amplifier — aligned to your goals, your context, your purpose.
+- Human flourishing is not an accident. It's something you engineer.
+- Transparency in the tools we build creates trust with the people who use them.
+- Your biggest competitive advantage is the team that operates without fear.
 
 ### Our Culture
 
-\_
+At Galvanize Designs, we operate on the same principles we build into our products. We give credit generously. We build psychological safety into every client relationship. We treat problems as design opportunities. We are small by choice — and precise by discipline. Excellence here is not a performance; it is the standard the work is held to before it leaves our hands.
 
 ### Heart and Soul of Galvanize Designs
 
@@ -76,7 +84,7 @@ _Generated: 2026-04-07 | Career Mentor & PR Build_
 
 ### Galvanize Designs Company Name Ethos
 
-- How our company applies the definition of galvanize to what we do. To us 'galvanize' means to inspire a group of people and AI to take action together.
+- How our company applies the definition of galvanize to what we do. To us 'galvanize' means to inspire a group of people and AI to unite and take action together — uniting human intent and AI capabilities to augment the best part of our humanity and purpose.
 
 ### Definition of Galvanize
 
