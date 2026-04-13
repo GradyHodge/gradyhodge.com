@@ -1,0 +1,78 @@
+---
+title: I Renamed My AI Infrastructure and Accidentally Saved 60K Tokens
+description: We rebranded Human 3.0 to Compass, optimized settings.json, and built a Vibathon competition playbook. Here's what happened in 4 hours.
+date: '2026-04-13'
+pillar: AI Tools & Experiments
+---
+
+Yesterday I had a problem: "Human 3.0" sounded like we built a product. We built a system. A philosophy. A way of thinking about AI as your compass — not your replacement.
+
+So we renamed it.
+
+## The Glow-Up
+
+**Before:** Human 3.0 (sounds like software)
+**After:** Compass (sounds like someone got it)
+
+Compass is the human. AI navigates.
+
+That's the whole thing. I needed to feel like the principal and Bodhi was the guide, not the other way around. So we:
+
+- Renamed every page on galvanizedesigns.com
+- Updated the SIGNAL API (my public identity endpoint)
+- Added the catchphrase to the footer
+- Deployed everything in 20 minutes
+
+## The Accidental Efficiency Hack
+
+While I was reorganizing, I read a YouTube video transcript about Claude Code optimization (because apparently that's my life now). Turns out I had **52,000 invisible tokens** sitting in my settings.json doing absolutely nothing.
+
+Two words: `enableAllProjectMcpServers: false`
+
+Before: Every MCP from every project loaded on every message.
+After: I load what I actually need.
+
+Then I added:
+- `autoCompactPercentageOverride: 75` (triggers compression before quality tanks)
+- `bashMaxOutputLength: 150000` (stops silent truncation retry loops)
+- Deny rules for node_modules, dist, .next, lock files (stop reading garbage)
+
+**Net result:** 30-60K tokens removed from baseline context. Didn't change anything about how we work. Just cleaned house.
+
+## The Vibathon Thing
+
+I'm entering Compass in a May 2026 competition. The guidelines were scattered across 5 pages. So I:
+
+1. Extracted all best practices from their official guides
+2. Created copy-paste prompts for Backend Rules, Design Rules, Demo Scripts
+3. Built a 3-5 minute demo structure that actually wins
+4. Documented the whole playbook in VIBATHON_STRATEGY.md
+
+The judges want to see:
+- A real problem (not buzzwords)
+- A real solution (not hype)
+- A real demo (not pre-loaded mockups)
+- Understanding of what you built (not just narration)
+
+So the playbook is: give Bodhi the rules upfront, ask specific questions with context, record one clean take (authenticity > polish).
+
+## What Surprised Me
+
+I thought the efficiency gains would be the headline. They're not.
+
+The headline is that naming the system *changed how I think about it.* Compass isn't an AI tool anymore. It's a collaborator with a specific job: navigate while I drive.
+
+That mental shift? Worth 60K tokens.
+
+## What You Can Do
+
+If you're building something with AI:
+
+1. **Name it.** Not because the AI cares. Because you'll show up differently.
+2. **Give it rules.** Copy-paste them every session if you have to. Consistency > perfection.
+3. **Clean your settings.json.** You probably have 20K+ invisible tokens sitting there.
+4. **Write it down.** The playbook becomes the shortcut.
+
+---
+
+*Gray Hodge builds Compass infrastructure and documents how. He is the creator of PAI (Personal AI Infrastructure) and founder of Galvanize Designs. [Let's build something →](https://galvanizedesigns.com)*
