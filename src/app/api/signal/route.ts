@@ -5,19 +5,21 @@
 
 import { NextResponse } from 'next/server'
 
+export const dynamic = 'force-static'
+
 const signal = {
   version: '1.0',
   updated: '2026-04-08',
   identity: {
     name: 'Gray Hodge',
     title: 'The Eudaimonia Architect',
-    subtitle: 'AI Engineer · Leadership Culture Architect · Human 3.0 Builder',
+    subtitle: 'AI Engineer · Leadership Culture Architect · Compass Builder',
     url: 'https://gradyhodge.com',
     work: 'https://galvanizedesigns.com',
     github: 'https://github.com/GradyHodge',
     linkedin: 'https://linkedin.com/in/gradyhodge',
   },
-  mission: 'Help leaders and professionals build their Human 3.0 stack — a personal AI infrastructure that makes them more capable, more purposeful, and more resilient as the world changes.',
+  mission: 'Help leaders and professionals build their Compass stack — a personal AI infrastructure that makes them more capable, more purposeful, and more resilient as the world changes.',
   stack: {
     description: 'The TELOS → FRAME → SIGNAL architecture',
     layers: [
@@ -96,7 +98,7 @@ const signal = {
     tiers: [
       {
         name: 'DIY',
-        description: 'Articles, frameworks, and tools — build your Human 3.0 stack yourself',
+        description: 'Articles, frameworks, and tools — build your Compass stack yourself',
         price: 'Free',
         url: 'https://gradyhodge.com/writing',
       },
@@ -108,7 +110,7 @@ const signal = {
       },
       {
         name: 'Done-For-You',
-        description: 'Full Human 3.0 stack — TELOS, FRAME, SIGNAL, PAI — built and deployed for you',
+        description: 'Full Compass stack — TELOS, FRAME, SIGNAL, PAI — built and deployed for you',
         price: '$10,000–$25,000',
         url: 'https://gradyhodge.com/human',
       },
