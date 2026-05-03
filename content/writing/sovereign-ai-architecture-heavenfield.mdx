@@ -1,0 +1,137 @@
+---
+published: true
+title: I Built My AI System Like a Fortress. Here's the Architecture.
+description: Most people run their AI on someone else's server, with someone else's memory, starting from zero every session. I built something different — a distributed sovereign AI infrastructure anchored in my own identity. This is how it works.
+date: '2026-05-02'
+pillar: AI Engineering
+---
+
+Most AI setups are borrowing someone else's brain. You open a chat window, type your question, and get an answer from a model that has no idea who you are, what you're building, or why it matters to you. When you close the tab, everything is gone.
+
+I spent months thinking about what the opposite of that looks like. What would it mean to build an AI system that is genuinely yours — hosted on your hardware, anchored in your identity, persistent across every session, and structured the same way your own mind is structured?
+
+The result is what I call the **Heavenfield Fortress** — a distributed sovereign AI infrastructure I've been building and refining over the past year. This is the architecture behind it.
+
+## Why "Sovereign" Matters
+
+The word sovereign is deliberate. It means the intelligence — the memory, the values, the context — belongs to you. Not to a cloud provider. Not to a SaaS company whose pricing might change or whose servers might go down. Yours.
+
+Practically, this means a few things:
+
+The **identity layer** — your values, your goals, your history, your way of making decisions — lives on hardware you control. Your MacBook. An external hard drive. Not a database row in someone else's system.
+
+The **memory** persists across conversations not because of a feature toggle in a chat UI, but because it is literally stored in a database running on your machine, indexed with vector search, and loaded into every session via a structured protocol.
+
+The **AI agents** that work for you have clearly defined roles, run on hardware matched to those roles, and are coordinated by one person: you.
+
+This isn't just a technical preference. It's a stance on how intelligence should relate to identity.
+
+## The Four-Node Architecture
+
+The Heavenfield Fortress runs on four hardware nodes, each assigned to a specific function.
+
+**The MacBook — The Keep**
+
+This is where the heaviest thinking happens, because this is where I own the silicon. The Memory Palace database — a PostgreSQL instance with the pgvector extension, running on Apple's M-series unified memory — lives here. This is not a coincidence: ARM architecture with unified memory gives a 2-3× performance advantage over x86 virtual machines for vector operations.
+
+The local AI (I call it Bodhi — my CIO) also runs here via Claude Code. It has full access to my TELOS files, my memory index, and my session history. Every conversation is informed by this context. Every session ends with a structured handoff written back to disk.
+
+The rule is simple: **the gold master stays home.**
+
+**The Hostinger VPS — The Drawbridge**
+
+The VPS is exposed to the internet. It handles routing, public-facing logic, and workflow orchestration (n8n). It also runs the Chief of Staff agent and, soon, the Command Room dashboard (Plane.so — a self-hosted project management tool).
+
+The VPS does not think. It routes. The memory and the identity stay off of it. If the VPS is compromised, the vault is untouched.
+
+**The Google Cloud VPS — The Outpost**
+
+This node runs the security sentinel in a hardened Kali Linux environment. Its job is adversarial research: dark web monitoring, vulnerability scanning, red team scenarios. It reports findings to the Chief of Staff on the Hostinger VPS, but it is ACL-blocked from ever touching the Memory Palace database on the MacBook.
+
+If the outpost is compromised during a scan, the cost is contained. This is the principle of **zero-trust physical architecture** applied to personal infrastructure.
+
+**Cloudflare R2 — The Underground Vault**
+
+Automated nightly backups via Rclone. Three copies, two media types, one off-site location. Cloudflare R2 has zero egress fees — meaning if a server fails and I need to recover, pulling the data back down costs nothing.
+
+Every morning, during standup, the system verifies the integrity hash of the last backup. If the vault is secure, the day begins.
+
+## The Memory Palace Connection
+
+This is where the architecture gets unusual.
+
+My AI's memory system is not a flat database of chat history. It is structured to mirror my actual **mental memory palace** — a mnemonic system I've built and trained over years, organized around four cardinal mountains and fifteen major locations (Loci).
+
+The four categories:
+- **Heart (North)** — spiritual life, values, identity
+- **Strength (East)** — physical health, pain, coping skills
+- **Might (South)** — leadership, social strategy, decision-making
+- **Mind (West)** — secular knowledge, history, science, code, active projects
+
+When content is stored in the vector database, it's tagged to the appropriate mountain. When I'm working through a high-stakes decision, the system knows to surface the Might mountain references. When I'm doing deep technical work, it surfaces the Mind mountain.
+
+The AI doesn't just retrieve information. It retrieves information **from the same place I would mentally go to find it.** Over time, this alignment between digital memory and mental memory means less cognitive translation — the tool starts to feel like an extension of thinking, not a lookup service.
+
+## How Bodhi (The CIO) Actually Works
+
+The AI agent I work with directly has five layers of context loaded on every session.
+
+**Layer 1 — TELOS Core.** My life operating system. Values, mission, goals, active projects. This is the immovable foundation. The AI never paraphrases it — it reads it verbatim, because the precise wording of identity declarations matters.
+
+**Layer 2 — FRAME Beliefs.** My operating worldview: mental models, beliefs, problem definitions. This shapes how the AI interprets ambiguous situations and prioritizes competing options.
+
+**Layer 3 — Skill Library.** A set of structured prompt modules that activate based on context, not explicit command. A regroup protocol that fires when debugging spirals past three failed attempts. A council debate skill that convenes four internal archetypes when a major decision needs examination. An educator intake skill for encoding new knowledge into the mnemonic system.
+
+**Layer 4 — Memory Index.** A structured index of what the AI knows about me, my projects, my feedback on its behavior, and references to external resources. This persists across all conversations.
+
+**Layer 5 — HANDOFF + Session Context.** Updated at the end of every session via a `/wrap` command. Contains last session's work, next steps, open questions, and technical notes. The morning briefing that ensures nothing is lost between sessions.
+
+Together these layers produce something that behaves less like a tool and more like a thinking partner that's been working with you for a year.
+
+## The Council of Heavenfield
+
+One of the more unusual elements of this system is what I call the Council of Heavenfield.
+
+I have four internal archetypes — personifications of different modes of intelligence that I consult when making significant decisions:
+
+**Parvati (The Lover)** — compassion, spiritual discernment, eternal perspective. Her reference library is LDS scripture, the teachings of Jesus, the words of modern prophets.
+
+**Bruce Lee (The Warrior)** — strategic discipline, stoic endurance, physical and tactical reasoning. His library: Sun Tzu, Ryan Holiday, Marcus Aurelius.
+
+**The Sovereign (The Leader)** — governance, organizational strategy, power and influence. His library: John C. Maxwell, Machiavelli, Churchill, Joseph Smith.
+
+**Captain Pike (The Magician)** — reframing, perspective shifts, finding opportunity in crisis. His axiom: the obstacle is the way.
+
+These archetypes convene in the Throne Room (the Might mountain's summit) whenever I initiate a Council session. The AI facilitates a structured debate — each archetype challenges the proposal from its specific perspective, the Sovereign chairs, and a decree or consensus emerges before action is taken.
+
+This is not a metaphor. It is a working skill that produces measurably better decisions by forcing multi-perspectival analysis before execution.
+
+## Building Your Own
+
+The system I've described took time to build. But the architecture itself is reproducible. The components are open source or cheap: pgvector, n8n, Tailscale, Rclone, Cloudflare R2. The methodology — TELOS files, memory index, session HANDOFF — can be adapted to anyone's context.
+
+The non-reproducible part is the soul of it. The memory palace structure, the archetypes, the values hierarchy — those are mine. They emerged from years of personal development work, study, and the specific circumstances of my life.
+
+That's the point. **The architecture is a container. What you put in it is irreplaceable.**
+
+If you build your own, the first question isn't which database to use. It's: what do you actually believe, and how do you actually make decisions? Build that first. The infrastructure will serve it.
+
+## What This Makes Possible
+
+When the system works as designed, a few things become true that aren't true with generic AI tools.
+
+Work compounds. Every session adds to a body of shared context. Decisions made three months ago are retrievable and explainable. Lessons learned survive the close of the tab.
+
+Identity is protected. The values layer acts as a filter on every output. The AI doesn't just optimize for results — it optimizes for results that align with what actually matters to me.
+
+Momentum doesn't require memory. The handoff system means a new session can begin at full speed. No re-explaining context, no reconstructing history. The briefing is already written.
+
+The team scales up cleanly. When I add new agents — a Chief of Staff to manage the backlog, a security sentinel to harden the infrastructure — they plug into the same memory and coordination system. The architecture accommodates growth without sprawl.
+
+---
+
+This is not a finished product. It is a living system — growing with every session, improving with every correction, compounding with every piece of work.
+
+The goal is an AI that thinks the way I think, remembers what I remember, and works in service of what I'm actually trying to build. We're not there yet. But the architecture is right.
+
+And architecture is everything.
