@@ -1,0 +1,81 @@
+---
+published: true
+title: I Gave My AI a Self-Improvement Loop — Now It Gets Better Every Session
+description: Inspired by Hermes Agent's recursive self-evolution architecture, I built a system that turns every session correction and approval into permanent AI behavior. Here's how it works.
+date: '2026-05-04'
+pillar: AI Engineering
+---
+
+Most AI assistants have a memory problem that isn't about memory at all.
+
+It's not that they forget facts. It's that they forget *patterns*. You correct the same behavior in session after session. You re-explain the same preferences. You re-establish the same context. The AI isn't getting worse — it's just never getting better.
+
+I decided to fix that. And the solution came from studying how the Hermes model does something most AI systems don't: recursive self-improvement without retraining.
+
+## What Hermes Gets Right
+
+Hermes Agent (NousResearch) is built around a deceptively simple insight: self-improvement doesn't require updating model weights. It requires **closed feedback loops**.
+
+Hermes runs a structured self-evaluation checkpoint every 15 tool calls. It asks: what worked, what failed, what's worth persisting? Valuable procedures get written into reusable skill files. Corrections and edge cases get captured as memory. Over 20–30 sessions, a skill that took 25 tool calls to execute takes 8–10.
+
+The model isn't smarter. The system is smarter.
+
+That's the distinction that changes everything. And it's entirely replicable without access to Hermes at all.
+
+## The Three-Pass Dialectic
+
+I built a skill called `self-improve` that runs automatically at the end of every session. It uses what I'm calling a three-pass dialectic — borrowed from Hermes's Honcho user modeling architecture:
+
+**Pass 1 — Session Audit**
+
+Before touching any files, the AI reviews the full session honestly. Not as a summary — as a performance review.
+
+What did I get corrected on? What did I have to redo? Where did I add things that weren't asked for? What did the user accept without pushback — especially non-obvious choices? What took more back-and-forth than it should have?
+
+Both corrections *and* approvals matter. Confirming what worked is as important as fixing what didn't.
+
+**Pass 2 — Reconciliation**
+
+The audit gets cross-checked against existing memory files. If a correction in today's session matches a pattern already recorded from a previous session — that's a repeat offense. It gets flagged explicitly.
+
+A repeat offense means the rule exists but isn't being applied. The memory needs to be strengthened, made more specific, or promoted to a higher-priority location where it's harder to miss.
+
+**Pass 3 — Memory Writes**
+
+Up to three memory files get written. Not more. Prioritizing ruthlessly is part of the discipline — five weak generic memories are worse than one strong specific one.
+
+Each feedback memory follows a strict structure: the rule itself, the *why* behind it (the reason given or clearly implied), and the *how to apply* (the specific situation where this kicks in). Knowing the why makes it possible to judge edge cases, not just follow rules blindly.
+
+The top insight from the session also gets logged to a vector database with metadata marking whether it's a new pattern or a repeat offense. Over time, this creates a searchable history of how the AI's behavior has evolved.
+
+## The Mid-Session Trigger
+
+The loop doesn't only fire at session end. There's a mid-session trigger too.
+
+When I say "that's wrong," "stop doing that," "yes exactly," or "keep doing that" — the AI immediately runs Pass 1 and Pass 3 (skipping reconciliation to preserve flow). It writes the memory on the spot and confirms: *"Saved permanently: [one-line summary]."*
+
+This closes the loop in real time. Corrections don't wait until wrap to become persistent. Approvals don't evaporate either.
+
+## What Changes After a Month
+
+The measurable effect isn't dramatic in any single session. It's cumulative.
+
+The AI stops explaining things you already know. It stops asking questions that have obvious answers. It stops adding features you didn't request. The friction that accumulates across dozens of sessions — re-establishing preferences, re-correcting patterns, re-explaining context — starts to decrease.
+
+This is the same thing Hermes measures: not intelligence, but operational efficiency. How many cycles does it take to get from task to good output?
+
+The goal is for that number to keep falling.
+
+## Why This Matters Beyond Productivity
+
+There's a more fundamental reason this is worth building: it changes the nature of the relationship.
+
+An AI that gets better at helping you specifically — through the accumulation of real interaction, not just better prompts — isn't a tool anymore. It's a system that has learned you. That has a track record with you. That you have a track record with.
+
+That's a different category of thing. And it's available to anyone willing to architect it deliberately.
+
+The gap between generic AI and personal AI isn't the model. It's the feedback loop.
+
+---
+
+*Gray Hodge builds AI systems and writes about building in public. He is the creator of PAI (Personal AI Infrastructure) and the A.U.R.A. architecture. [Work with Gray →](https://galvanizedesigns.com)*
