@@ -36,9 +36,14 @@ export function getArticle(slug: string): Article | null {
 
 export function getArticles(): Article[] {
   if (!fs.existsSync(CONTENT_DIR)) return []
+  const today = new Date()
+  today.setHours(23, 59, 59, 999)
   const files = fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.mdx'))
   return files
     .map(file => getArticle(file.replace('.mdx', '')))
-    .filter((a): a is Article => a !== null && a.published)
+    .filter((a): a is Article => {
+      if (!a || a.published === false) return false
+      return new Date(a.date) <= today
+    })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
