@@ -1,0 +1,30 @@
+name: Weekly Article Drip — Auto Deploy
+
+on:
+  schedule:
+    # Every Tuesday and Thursday at 8:00 AM CT (13:00 UTC)
+    - cron: '0 13 * * 2'
+    - cron: '0 13 * * 4'
+  workflow_dispatch:  # also allows manual trigger from GitHub
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 85d75fa506f0b8de93935abd4bc84315
+        run: npx wrangler pages deploy .vercel/output/static --project-name gradyhodge-com --branch main
