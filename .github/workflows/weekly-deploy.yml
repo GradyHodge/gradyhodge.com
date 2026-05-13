@@ -27,4 +27,4 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: 85d75fa506f0b8de93935abd4bc84315
-        run: npx wrangler pages deploy .vercel/output/static --project-name gradyhodge-com --branch main
+        run: npx wrangler pages deploy out --project-name gradyhodge-com --branch main
